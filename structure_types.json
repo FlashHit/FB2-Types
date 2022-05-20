@@ -1,0 +1,8887 @@
+{
+	"AILocoBaseTaskData": {
+		"$type": "AILocoBaseTaskData",
+		"$properties": {
+			"PoseChangeMovingTowards": {
+				"DefaultValue": "AntPoseEnum_Stand",
+				"$type": "AntPoseEnum"
+			},
+			"AttentionChangeMovingTowards": {
+				"DefaultValue": "AntAttentionStateEnum_Relaxed",
+				"$type": "AntAttentionStateEnum"
+			},
+			"SpeedChangeMovingTowards": {
+				"DefaultValue": "AntSpeedLevel_Still",
+				"$type": "AntSpeedLevel"
+			},
+			"PoseChange": {
+				"DefaultValue": "AntPoseEnum_Stand",
+				"$type": "AntPoseEnum"
+			},
+			"AttentionStateChange": {
+				"DefaultValue": "AntAttentionStateEnum_Relaxed",
+				"$type": "AntAttentionStateEnum"
+			},
+			"SpeedLevelChange": {
+				"DefaultValue": "AntSpeedLevel_Still",
+				"$type": "AntSpeedLevel"
+			},
+			"IsScripted": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Radius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"AILocoBinding": {
+		"$type": "AILocoBinding",
+		"$properties": {
+			"LocoTarget": {
+				"$type": "AntRef"
+			},
+			"AttentionState": {
+				"$type": "AntRef"
+			},
+			"EndPoseEnum": {
+				"$type": "AntRef"
+			},
+			"CurrentPoseEnum": {
+				"$type": "AntRef"
+			},
+			"EnterExitPoseEnum": {
+				"$type": "AntRef"
+			},
+			"RunStyle": {
+				"$type": "AntRef"
+			},
+			"TargetWaypointPosition": {
+				"$type": "AntRef"
+			},
+			"TargetSpeedLevel": {
+				"$type": "AntRef"
+			},
+			"EnableProceduralHeadAim": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AILocoCoverBinding": {
+		"$type": "AILocoCoverBinding",
+		"$properties": {
+			"PrepareFire": {
+				"$type": "AntRef"
+			},
+			"ThrowGrenade": {
+				"$type": "AntRef"
+			},
+			"PeekOut": {
+				"$type": "AntRef"
+			},
+			"IdleBehindCover": {
+				"$type": "AntRef"
+			},
+			"PeekType": {
+				"$type": "AntRef"
+			},
+			"CoverTypeEnum": {
+				"$type": "AntRef"
+			},
+			"CoverFireStyle": {
+				"$type": "AntRef"
+			},
+			"EnterCover": {
+				"$type": "AntRef"
+			},
+			"ExitCover": {
+				"$type": "AntRef"
+			},
+			"IsCloseCover": {
+				"$type": "AntRef"
+			},
+			"DistanceScale": {
+				"$type": "AntRef"
+			},
+			"AbsoluteDistance": {
+				"$type": "AntRef"
+			},
+			"AngleToNormal": {
+				"$type": "AntRef"
+			},
+			"OutAngle": {
+				"$type": "AntRef"
+			},
+			"ThreatAngle": {
+				"$type": "AntRef"
+			},
+			"StopExitCoverOutAround": {
+				"$type": "AntRef"
+			},
+			"EnterStrategy": {
+				"$type": "AntRef"
+			},
+			"ExitStyle": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AILocoCoverTaskData": {
+		"$type": "AILocoCoverTaskData",
+		"$properties": {
+			"CoverType": {
+				"DefaultValue": "AntCoverEnum_RightCover",
+				"$type": "AntCoverEnum"
+			},
+			"CoverPose": {
+				"DefaultValue": "AntPoseEnum_Stand",
+				"$type": "AntPoseEnum"
+			},
+			"WaitTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"WorldAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PeekOut": {
+				"DefaultValue": "CoverPeekType_Out",
+				"$type": "CoverPeekType"
+			},
+			"ExitPose": {
+				"DefaultValue": "AntPoseEnum_Stand",
+				"$type": "AntPoseEnum"
+			},
+			"OffsetLength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"EnterStrategy": {
+				"DefaultValue": "CoverEnterStrategy_EnterNormally",
+				"$type": "CoverEnterStrategy"
+			},
+			"ExitAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DistanceToNextWaypoint": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"WantedPos": {
+				"$type": "Vec3"
+			},
+			"ThreatPosition": {
+				"$type": "Vec3"
+			},
+			"ForceExitCover": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ExitStyle": {
+				"DefaultValue": "CoverExitStyle_ExitCover",
+				"$type": "CoverExitStyle"
+			},
+			"PrepareFireType": {
+				"DefaultValue": "CoverFireType_Peek",
+				"$type": "CoverFireType"
+			},
+			"UseClientPosition": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"AILocoMoveTaskData": {
+		"$type": "AILocoMoveTaskData",
+		"$properties": {
+			"WaitTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"WorldAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OverrideAngle": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"EnterPose": {
+				"DefaultValue": "AntPoseEnum_Stand",
+				"$type": "AntPoseEnum"
+			},
+			"ExitPose": {
+				"DefaultValue": "AntPoseEnum_Stand",
+				"$type": "AntPoseEnum"
+			},
+			"WantedPos": {
+				"$type": "Vec3"
+			},
+			"UseClientPosition": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"AILocoVaultBinding": {
+		"$type": "AILocoVaultBinding",
+		"$properties": {
+			"Vault": {
+				"$type": "AntRef"
+			},
+			"DistanceBeforeVault": {
+				"$type": "AntRef"
+			},
+			"HeightBeforeVault": {
+				"$type": "AntRef"
+			},
+			"LengthOfVaultableObject": {
+				"$type": "AntRef"
+			},
+			"HeightAfterVault": {
+				"$type": "AntRef"
+			},
+			"DistanceAfterVault": {
+				"$type": "AntRef"
+			},
+			"VaultType": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AILocoVaultTaskData": {
+		"$type": "AILocoVaultTaskData",
+		"$properties": {
+			"DistanceBeforeVault": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HeightBeforeVault": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LengthOfVaultableObject": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HeightAfterVault": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DistanceAfterVault": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"WorldAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"StartPoint": {
+				"$type": "Vec3"
+			},
+			"UseClientPosition": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"VaultType": {
+				"DefaultValue": "WaypointVaultType_VaultOverHigh",
+				"$type": "WaypointVaultType"
+			}
+		}
+	},
+	"AIProximityReactionsBinding": {
+		"$type": "AIProximityReactionsBinding",
+		"$properties": {
+			"AIReaction": {
+				"$type": "AntRef"
+			},
+			"AIExplosionReaction": {
+				"$type": "AntRef"
+			},
+			"AIExplosionForce": {
+				"$type": "AntRef"
+			},
+			"AIStunReaction": {
+				"$type": "AntRef"
+			},
+			"AIStunReactionRandomFactor": {
+				"$type": "AntRef"
+			},
+			"AIReactionDirection": {
+				"$type": "AntRef"
+			},
+			"FireNearby": {
+				"$type": "AntRef"
+			},
+			"AimUpAndDown": {
+				"$type": "AntRef"
+			},
+			"FocusAimScale": {
+				"$type": "AntRef"
+			},
+			"FocusAiming": {
+				"$type": "AntRef"
+			},
+			"EnableProceduralHeadAim": {
+				"$type": "AntRef"
+			},
+			"KillFromAnimation": {
+				"$type": "AntRef"
+			},
+			"PlayerAnimationKill": {
+				"$type": "AntRef"
+			},
+			"PlayerInitiatedRagdoll": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"ActionSuppressor": {
+		"$type": "ActionSuppressor",
+		"$properties": {
+			"ActionToSuppress": {
+				"DefaultValue": "EIAThrottle",
+				"$type": "EntryInputActionEnum"
+			},
+			"SuppressingValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"AdvertisementZoneMember": {
+		"$type": "AdvertisementZoneMember",
+		"$properties": {
+			"Identifier": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Filename": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"AimingConstraintEntityBinding": {
+		"$type": "AimingConstraintEntityBinding",
+		"$properties": {
+			"ProneAimLimit": {
+				"$type": "AntRef"
+			},
+			"ProneAimDistance": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AimingConstraintsData": {
+		"$type": "AimingConstraintsData",
+		"$properties": {
+			"MinYaw": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxYaw": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinPitch": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxPitch": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"AimingPoseData": {
+		"$type": "AimingPoseData",
+		"$properties": {
+			"MinimumPitch": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaximumPitch": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TargetingFov": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AimSteadiness": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SpeedMultiplier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RecoilMultiplier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"AirMissileJammingData": {
+		"$type": "AirMissileJammingData",
+		"$properties": {
+			"EnableAirMissileJamming": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"MaxRadius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinRadius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Theta": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Phi": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinTurnSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxTurnSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"QuietModeProbability": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"QuietModeTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"JammingTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TurnCalculationTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"UpdateJammingPositionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"AmmoConfigData": {
+		"$type": "AmmoConfigData",
+		"$properties": {
+			"MagazineCapacity": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"NumberOfMagazines": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"TraceFrequency": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"AmmoPickupMinAmount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"AmmoPickupMaxAmount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"AutoReplenishMagazine": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"AutoReplenishDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AmmoBagPickupDelayMultiplier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AmmoBagPickupAmount": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"AngleOfImpactData": {
+		"$type": "AngleOfImpactData",
+		"$properties": {
+			"Zone12Delimiter": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Zone23Delimiter": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Zone1Multiplier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Zone2Multiplier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Zone3Multiplier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Enabled": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"Animated1pOnlyWeaponBinding": {
+		"$type": "Animated1pOnlyWeaponBinding",
+		"$properties": {
+			"UndeployFinished": {
+				"$type": "AntRef"
+			},
+			"CameraFreeWeight": {
+				"$type": "AntRef"
+			},
+			"Deploy1P": {
+				"$type": "AntRef"
+			},
+			"HideWeapon1p": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"Animated3pOnlyWeaponBinding": {
+		"$type": "Animated3pOnlyWeaponBinding",
+		"$properties": {
+			"Deploy3P": {
+				"$type": "AntRef"
+			},
+			"HideWeapon3p": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AnimatedPointCloudAttributeDesc": {
+		"$type": "AnimatedPointCloudAttributeDesc",
+		"$properties": {
+			"Usage": {
+				"DefaultValue": "PointCloudAttributeUsage_Position",
+				"$type": "PointCloudAttributeUsage"
+			},
+			"IFrameQuantization": {
+				"DefaultValue": "PointCloudAttributeQuantization_s5e5",
+				"$type": "PointCloudAttributeQuantization"
+			},
+			"DFrameQuantization": {
+				"DefaultValue": "PointCloudAttributeQuantization_s5e5",
+				"$type": "PointCloudAttributeQuantization"
+			}
+		}
+	},
+	"AnimatedSkeletonDatabaseItem": {
+		"$type": "AnimatedSkeletonDatabaseItem",
+		"$properties": {
+			"Asset": {
+				"$type": "SkeletonAsset"
+			},
+			"Names": {
+				"$array": true,
+				"$type": "Int32"
+			},
+			"SoldierCollision": {
+				"$type": "SkeletonCollisionData"
+			},
+			"RagdollCollision": {
+				"$type": "SkeletonCollisionData"
+			},
+			"Ragdoll": {
+				"$type": "RagdollAsset"
+			},
+			"SpecialBones": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"HipBone": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"HeadBone": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"AnimatedWeaponBinding": {
+		"$type": "AnimatedWeaponBinding",
+		"$properties": {
+			"Deploy": {
+				"$type": "AntRef"
+			},
+			"AltDeploy": {
+				"$type": "AntRef"
+			},
+			"Undeploy": {
+				"$type": "AntRef"
+			},
+			"QuickSwitch": {
+				"$type": "AntRef"
+			},
+			"Reload": {
+				"$type": "AntRef"
+			},
+			"ReloadShotgun": {
+				"$type": "AntRef"
+			},
+			"Fire": {
+				"$type": "AntRef"
+			},
+			"FireSingle": {
+				"$type": "AntRef"
+			},
+			"FireHoldAndRelease": {
+				"$type": "AntRef"
+			},
+			"FireSimple": {
+				"$type": "AntRef"
+			},
+			"FirstShotSpawned": {
+				"$type": "AntRef"
+			},
+			"BoltAction": {
+				"$type": "AntRef"
+			},
+			"PumpAction": {
+				"$type": "AntRef"
+			},
+			"MeleeAttack": {
+				"$type": "AntRef"
+			},
+			"QuickThrow": {
+				"$type": "AntRef"
+			},
+			"QuickThrowType": {
+				"$type": "AntRef"
+			},
+			"AimBody": {
+				"$type": "AntRef"
+			},
+			"AlwaysAimHead": {
+				"$type": "AntRef"
+			},
+			"OneHanded": {
+				"$type": "AntRef"
+			},
+			"OneHandedAiming": {
+				"$type": "AntRef"
+			},
+			"AimingEnabled": {
+				"$type": "AntRef"
+			},
+			"LowerGun": {
+				"$type": "AntRef"
+			},
+			"BreathControl": {
+				"$type": "AntRef"
+			},
+			"RflType": {
+				"$type": "AntRef"
+			},
+			"PstlType": {
+				"$type": "AntRef"
+			},
+			"HgrType": {
+				"$type": "AntRef"
+			},
+			"ATType": {
+				"$type": "AntRef"
+			},
+			"ShgType": {
+				"$type": "AntRef"
+			},
+			"LMGType": {
+				"$type": "AntRef"
+			},
+			"BagType": {
+				"$type": "AntRef"
+			},
+			"SnpType": {
+				"$type": "AntRef"
+			},
+			"Zoom": {
+				"$type": "AntRef"
+			},
+			"AimBodyWeight": {
+				"$type": "AntRef"
+			},
+			"DisableZoomToggleWeight": {
+				"$type": "AntRef"
+			},
+			"ZoomParameter": {
+				"$type": "AntRef"
+			},
+			"ZoomScaleFactor": {
+				"$type": "AntRef"
+			},
+			"Dispersion": {
+				"$type": "AntRef"
+			},
+			"AimTargetPosBody": {
+				"$type": "AntRef"
+			},
+			"ZoomOutSpeed": {
+				"$type": "AntRef"
+			},
+			"ZoomInSpeed": {
+				"$type": "AntRef"
+			},
+			"UnDeploySpeed": {
+				"$type": "AntRef"
+			},
+			"DeploySpeed": {
+				"$type": "AntRef"
+			},
+			"LightEnabled": {
+				"$type": "AntRef"
+			},
+			"FireModeChanged": {
+				"$type": "AntRef"
+			},
+			"AnimType": {
+				"$type": "AntRef"
+			},
+			"GunDown": {
+				"$type": "AntRef"
+			},
+			"NumberOfBulletsLeftInGun": {
+				"$type": "AntRef"
+			},
+			"BulletsLeftInGun": {
+				"$type": "AntRef"
+			},
+			"AbortVehicleDeploy": {
+				"$type": "AntRef"
+			},
+			"CurrentProjectileIndex": {
+				"$type": "AntRef"
+			},
+			"WeaponActionESIG": {
+				"$type": "AntRef"
+			},
+			"IsSprinting": {
+				"$type": "AntRef"
+			},
+			"PreparingToBash": {
+				"$type": "AntRef"
+			},
+			"JustStartedSprinting": {
+				"$type": "AntRef"
+			},
+			"KickBackInIronSight": {
+				"$type": "AntRef"
+			},
+			"ZoomingTime": {
+				"$type": "AntRef"
+			},
+			"TriggerZoomGunTwitch": {
+				"$type": "AntRef"
+			},
+			"WeaponChooserSignal": {
+				"$type": "AntRef"
+			},
+			"WeaponClassSignal": {
+				"$type": "AntRef"
+			},
+			"OffsetX": {
+				"$type": "AntRef"
+			},
+			"OffsetY": {
+				"$type": "AntRef"
+			},
+			"OffsetZ": {
+				"$type": "AntRef"
+			},
+			"AIAllowFire": {
+				"$type": "AntRef"
+			},
+			"AIAltFireFromAnt": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AnimationConfigurationData": {
+		"$type": "AnimationConfigurationData",
+		"$properties": {
+			"ShootModuleData": {
+				"$type": "AnimationConfigurationShootModuleData"
+			},
+			"WeaponOffsetModuleData": {
+				"$type": "WeaponOffsetData"
+			},
+			"WeaponSpeedModuleData": {
+				"$type": "WeaponSpeedData"
+			}
+		}
+	},
+	"AnimationConfigurationShootModuleData": {
+		"$type": "AnimationConfigurationShootModuleData",
+		"$properties": {
+			"ZoomedKickbackFactor": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"AnimationDrivenBinding": {
+		"$type": "AnimationDrivenBinding",
+		"$properties": {
+			"Velocity": {
+				"$type": "AntRef"
+			},
+			"EnableCollision": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AntAnimatableData": {
+		"$type": "AntAnimatableData",
+		"$properties": {
+			"Actor": {
+				"$type": "AntRef"
+			},
+			"ProceduralAwareness": {
+				"$type": "ProceduralAwarenessAntRefs"
+			},
+			"RightHandEffectorDisableOverride": {
+				"$type": "AntRef"
+			},
+			"LeftHandEffectorDisableOverride": {
+				"$type": "AntRef"
+			},
+			"MasterSkeletonAsset": {
+				"$type": "MasterSkeletonAsset"
+			}
+		}
+	},
+	"AntAnimationHandlerData": {
+		"$type": "AntAnimationHandlerData",
+		"$properties": {
+			"Animatable": {
+				"$type": "AntAnimatableData"
+			},
+			"RootController": {
+				"$type": "AntRef"
+			},
+			"LodBinding": {
+				"$type": "LodBinding"
+			},
+			"AntPackageData": {
+				"$array": true,
+				"$type": "AntPackageAsset"
+			},
+			"ReportBackFromAnt": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"EnableMasterSlaveCopy": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"BonesToMirror": {
+				"$array": true,
+				"$type": "GameplayBone"
+			},
+			"IsProp": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"AntDynamicAvoidanceBinding": {
+		"$type": "AntDynamicAvoidanceBinding",
+		"$properties": {
+			"TimeUntilCollision": {
+				"$type": "AntRef"
+			},
+			"DistanceUntilCollision": {
+				"$type": "AntRef"
+			},
+			"NormalizedVelocity": {
+				"$type": "AntRef"
+			},
+			"Speed": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AntEventData": {
+		"$type": "AntEventData",
+		"$properties": {
+			"TagId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Event": {
+				"$type": "EventSpec"
+			}
+		}
+	},
+	"AntInteractionBinding": {
+		"$type": "AntInteractionBinding",
+		"$properties": {
+			"OtherAnimatableID": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"AntRef": {
+		"$type": "AntRef",
+		"$properties": {
+			"AssetId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"AntiRollBars": {
+		"$type": "AntiRollBars",
+		"$properties": {
+			"Front": {
+				"$type": "AntiRollBar"
+			},
+			"Rear": {
+				"$type": "AntiRollBar"
+			}
+		}
+	},
+	"AntiSpamConfig": {
+		"$type": "AntiSpamConfig",
+		"$properties": {
+			"DetectionInterval": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DetectionIntervalMaxMessageCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ServerSideMessageCountTolerance": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"SecondsBlocked": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ServerSideSecondsBlockedTolerance": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"NotificationSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"StillBlockedSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"WarningSound": {
+				"$type": "SoundWaveAsset"
+			}
+		}
+	},
+	"AreaValueTeam": {
+		"$type": "AreaValueTeam",
+		"$properties": {
+			"AreaValue": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Team": {
+				"DefaultValue": "TeamNeutral",
+				"$type": "TeamId"
+			}
+		}
+	},
+	"AssetAabbs": {
+		"$type": "AssetAabbs",
+		"$properties": {
+			"PartAabb": {
+				"$array": true,
+				"$type": "AxisAlignedBox"
+			}
+		}
+	},
+	"AudioCurve": {
+		"$type": "AudioCurve",
+		"$properties": {
+			"Points": {
+				"$array": true,
+				"$type": "AudioCurvePoint"
+			},
+			"CurveType": {
+				"DefaultValue": "AudioCurveType_Spline",
+				"$type": "AudioCurveType"
+			}
+		}
+	},
+	"AudioCurvePoint": {
+		"$type": "AudioCurvePoint",
+		"$properties": {
+			"X": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Y": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"K": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"AudioGraphNodePort": {
+		"$type": "AudioGraphNodePort",
+		"$properties": {
+			"UnconnectedValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ValueIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint16"
+			},
+			"IsConnected": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"AudioLanguageMapping": {
+		"$type": "AudioLanguageMapping",
+		"$properties": {
+			"Source": {
+				"$type": "AudioLanguage"
+			},
+			"Target": {
+				"$type": "AudioLanguage"
+			}
+		}
+	},
+	"AudioObstructionMaterialInfo": {
+		"$type": "AudioObstructionMaterialInfo",
+		"$properties": {
+			"Material": {
+				"$type": "MaterialContainerPair"
+			},
+			"ObstructionFrequency": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"GainReduction": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"AutoAimData": {
+		"$type": "AutoAimData",
+		"$properties": {
+			"AutoAimOuterBoxOffset": {
+				"$type": "Vec3"
+			},
+			"AutoAimOuterBoxExtends": {
+				"$type": "Vec3"
+			},
+			"AutoAimInnerBoxOffset": {
+				"$type": "Vec3"
+			},
+			"AutoAimInnerBoxExtends": {
+				"$type": "Vec3"
+			},
+			"PoseType": {
+				"DefaultValue": "CharacterPoseType_Stand",
+				"$type": "CharacterPoseType"
+			}
+		}
+	},
+	"AwardStarNameInstance": {
+		"$type": "AwardStarNameInstance",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Category": {
+				"$type": "StatsCategoryBaseData"
+			}
+		}
+	},
+	"AwardStatus": {
+		"$type": "AwardStatus",
+		"$properties": {
+			"Code": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"CurrentValue": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"OriginalValue": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"IsCounting": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Counters": {
+				"$array": true,
+				"$type": "CounterStatus"
+			}
+		}
+	},
+	"AxisAlignedBox": {
+		"$type": "AxisAlignedBox",
+		"$properties": {
+			"min": {
+				"$type": "Vec3"
+			},
+			"max": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"BFServerConfigurationData": {
+		"$type": "BFServerConfigurationData",
+		"$properties": {
+			"ScoreMultiplier": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Licenses": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"BFServerConfigurationSchedule": {
+		"$type": "BFServerConfigurationSchedule",
+		"$properties": {
+			"Licenses": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"Levels": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"Data": {
+				"$type": "BFServerConfigurationData"
+			}
+		}
+	},
+	"BasicUnlockInfo": {
+		"$type": "BasicUnlockInfo",
+		"$properties": {
+			"UnlockGuid": {
+				"$type": "Guid"
+			},
+			"Identifier": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"UnlockScore": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Licenses": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"AdditionalLicenses": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"StringId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"BinaryOption": {
+		"$type": "BinaryOption",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"BlazeCreateGameParameters": {
+		"$type": "BlazeCreateGameParameters",
+		"$properties": {
+			"Base": {
+				"$type": "MatchmakingCreateGameParameters"
+			}
+		}
+	},
+	"BlurEffectData": {
+		"$type": "BlurEffectData",
+		"$properties": {
+			"DispersionStrength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DispersionThreshhold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ExplosionStrength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BulletStrength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ExplosionFalloffSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BulletFalloffSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"BoltActionData": {
+		"$type": "BoltActionData",
+		"$properties": {
+			"BoltActionDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BoltActionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HoldBoltActionUntilFireRelease": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HoldBoltActionUntilZoomRelease": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ForceBoltActionOnFireTrigger": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UnZoomOnBoltAction": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ReturnToZoomAfterBoltAction": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"BoneCollisionData": {
+		"$type": "BoneCollisionData",
+		"$properties": {
+			"DebugDrawColor": {
+				"$type": "Vec4"
+			},
+			"CapsuleOffset": {
+				"$type": "Vec3"
+			},
+			"BoneName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"AnimationHitReactionType": {
+				"DefaultValue": "HRT_Body",
+				"$type": "HitReactionType"
+			},
+			"MaterialPair": {
+				"$type": "MaterialContainerPair"
+			},
+			"BoneAxis": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"CapsuleLength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CapsuleRadius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ValidInHiLod": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ValidInLowLod": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"DeactivateIfBehindWall": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UsePhysicsRotation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"MaxPitch": {
+				"$type": "PitchModifier"
+			},
+			"MinPitch": {
+				"$type": "PitchModifier"
+			}
+		}
+	},
+	"BoolShaderParameter": {
+		"$type": "BoolShaderParameter",
+		"$properties": {
+			"ParameterName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"Boost": {
+		"$type": "Boost",
+		"$properties": {
+			"ForwardStrength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReverseStrength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DissipationTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RecoveryTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CrawlStrength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AccelerationScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"BulletHitInfo": {
+		"$type": "BulletHitInfo",
+		"$properties": {
+			"Direction": {
+				"$type": "Vec3"
+			},
+			"SpawnPosition": {
+				"$type": "Vec3"
+			},
+			"WeaponUnlockAsset": {
+				"$type": "SoldierWeaponUnlockAsset"
+			},
+			"WeaponType": {
+				"DefaultValue": "AntHitReactionWeaponType_Pistol",
+				"$type": "AntHitReactionWeaponType"
+			},
+			"BoneType": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"ShooterPlayerId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"BurstLimit": {
+		"$type": "BurstLimit",
+		"$properties": {
+			"Min": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Max": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"CameraBinding": {
+		"$type": "CameraBinding",
+		"$properties": {
+			"Render1pInBackground": {
+				"$type": "AntRef"
+			},
+			"ForceRender1pInForeground": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"CameraLeapData": {
+		"$type": "CameraLeapData",
+		"$properties": {
+			"Transform": {
+				"$type": "LinearTransform"
+			},
+			"Time": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"FovModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"CameraSineCurveData": {
+		"$type": "CameraSineCurveData",
+		"$properties": {
+			"Frequency": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Amplitude": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PhaseShift": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"CannedAnimationBinding": {
+		"$type": "CannedAnimationBinding",
+		"$properties": {
+			"LevelIndex": {
+				"$type": "AntRef"
+			},
+			"ScenarioIndex": {
+				"$type": "AntRef"
+			},
+			"ActorIndex": {
+				"$type": "AntRef"
+			},
+			"PartIndex": {
+				"$type": "AntRef"
+			},
+			"TriggerCannedAnimation": {
+				"$type": "AntRef"
+			},
+			"ExitCannedAnimation": {
+				"$type": "AntRef"
+			},
+			"ExternalTime": {
+				"$type": "AntRef"
+			},
+			"BlendValue": {
+				"$type": "AntRef"
+			},
+			"AdvanceScenario": {
+				"$type": "AntRef"
+			},
+			"EnteredLoop": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"CharacterMeleeBinding": {
+		"$type": "CharacterMeleeBinding",
+		"$properties": {
+			"TriggerMelee": {
+				"$type": "AntRef"
+			},
+			"SelfActor": {
+				"$type": "AntRef"
+			},
+			"OtherActor": {
+				"$type": "AntRef"
+			},
+			"MeleeActive": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"CharacterMeleeCommonBinding": {
+		"$type": "CharacterMeleeCommonBinding",
+		"$properties": {
+			"MeleeDistance": {
+				"$type": "AntRef"
+			},
+			"MeleeAngle": {
+				"$type": "AntRef"
+			},
+			"MeleeDefenceTime": {
+				"$type": "AntRef"
+			},
+			"MeleeSequenceTime": {
+				"$type": "AntRef"
+			},
+			"MeleeAborted": {
+				"$type": "AntRef"
+			},
+			"CloseToTarget": {
+				"$type": "AntRef"
+			},
+			"MeleeType": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"CharacterPoseConstraintsData": {
+		"$type": "CharacterPoseConstraintsData",
+		"$properties": {
+			"StandPose": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"CrouchPose": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"PronePose": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"CharacterWeaponBinding": {
+		"$type": "CharacterWeaponBinding",
+		"$properties": {
+			"WeaponId": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"ChildStaticModelNetworkInfo": {
+		"$type": "ChildStaticModelNetworkInfo",
+		"$properties": {
+			"NetworkRange": {
+				"$type": "IndexRange"
+			},
+			"ParentPartComponentIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ParentHealthStateIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"InstanceIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"ChunkStreamerCell": {
+		"$type": "ChunkStreamerCell",
+		"$properties": {
+			"Shape": {
+				"$array": true,
+				"$type": "Vec2"
+			},
+			"BundleName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"ClimbLadderBinding": {
+		"$type": "ClimbLadderBinding",
+		"$properties": {
+			"ClimbLadderPhase": {
+				"$type": "AntRef"
+			},
+			"ClimbLadderConnectPhase": {
+				"$type": "AntRef"
+			},
+			"ClimbLadderTransitionPhase": {
+				"$type": "AntRef"
+			},
+			"OnLadder": {
+				"$type": "AntRef"
+			},
+			"LadderTopTransition": {
+				"$type": "AntRef"
+			},
+			"FallHigh": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"ColorTintData": {
+		"$type": "ColorTintData",
+		"$properties": {
+			"Contrast": {
+				"$type": "Vec3"
+			},
+			"Brightness": {
+				"$type": "Vec3"
+			},
+			"Saturation": {
+				"$type": "Vec3"
+			},
+			"Hue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"ConstantForceData": {
+		"$type": "ConstantForceData",
+		"$properties": {
+			"Condition": {
+				"DefaultValue": "FCNever",
+				"$type": "ForceCondition"
+			},
+			"TypeOfForce": {
+				"DefaultValue": "FTForce",
+				"$type": "ForceType"
+			},
+			"Value": {
+				"$type": "Vec3"
+			},
+			"Space": {
+				"DefaultValue": "STBody",
+				"$type": "SpaceType"
+			}
+		}
+	},
+	"Consumable": {
+		"$type": "Consumable",
+		"$properties": {
+			"Instance": {
+				"$type": "Guid"
+			},
+			"Group": {
+				"DefaultValue": "ConsumableGroup_0",
+				"$type": "ConsumableGroup"
+			}
+		}
+	},
+	"ContinueWeaponAmmoData": {
+		"$type": "ContinueWeaponAmmoData",
+		"$properties": {
+			"MinMags": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"WeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"CoreSettings": {
+		"$type": "CoreSettings",
+		"$properties": {
+			"LiveEditingEnable": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"JobProcessorCount": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"MaxJobThreadCount": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Host": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"HostUser": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"HostUserDomain": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"InitSeed": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"LogLevel": {
+				"DefaultValue": "CllNone",
+				"$type": "CoreLogLevel"
+			},
+			"DisplayAsserts": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"CrashOnFatalErrors": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"RandomTimeSeed": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"RandomTickSeed": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"RandomSessionId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"GameConfigurationName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"UseStorageServer": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseDiskCaching": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HardwareProfile": {
+				"DefaultValue": "Hardware_Autodetect",
+				"$type": "HardwareProfile"
+			},
+			"HardwareCpuBias": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HardwareGpuBias": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ProfileDirectoryName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"AvailableLanguages": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"CounterHelper": {
+		"$type": "CounterHelper",
+		"$properties": {
+			"dummy": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"CounterStatus": {
+		"$type": "CounterStatus",
+		"$properties": {
+			"CurrentValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OriginalValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"CoverSlot": {
+		"$type": "CoverSlot",
+		"$properties": {
+			"Position": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"CriteriaAward": {
+		"$type": "CriteriaAward",
+		"$properties": {
+			"Award": {
+				"$type": "AwardData"
+			},
+			"Count": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Sid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"CriteriaStarCategoryInstance": {
+		"$type": "CriteriaStarCategoryInstance",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ParamX": {
+				"$type": "StatsCategoryBaseData"
+			},
+			"ParamY": {
+				"$type": "StatsCategoryBaseData"
+			}
+		}
+	},
+	"CustomReportValueData": {
+		"$type": "CustomReportValueData",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Kind": {
+				"DefaultValue": "CustomReportValueKind_ScoreMultiplier",
+				"$type": "CustomReportValueKind"
+			},
+			"DataType": {
+				"DefaultValue": "PersistentValueDataType_Decimal",
+				"$type": "PersistentValueDataType"
+			}
+		}
+	},
+	"CustomizeVisual": {
+		"$type": "CustomizeVisual",
+		"$properties": {
+			"Visual": {
+				"$array": true,
+				"$type": "UnlockAsset"
+			}
+		}
+	},
+	"CustomizedMeshMaterialsData": {
+		"$type": "CustomizedMeshMaterialsData",
+		"$properties": {
+			"MeshBlueprint": {
+				"$type": "ObjectBlueprint"
+			},
+			"MaterialNames": {
+				"$array": true,
+				"$type": "CString"
+			}
+		}
+	},
+	"DataCopSettings": {
+		"$type": "DataCopSettings",
+		"$properties": {
+			"Values": {
+				"$array": true,
+				"$type": "DataCopValueSetting"
+			}
+		}
+	},
+	"DataCopValueSetting": {
+		"$type": "DataCopValueSetting",
+		"$properties": {
+			"DataKey": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"FrameSpacing": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Offset": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"DataField": {
+		"$type": "DataField",
+		"$properties": {
+			"Value": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ValueRef": {
+				"$type": "DataContainer"
+			},
+			"Id": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"AccessType": {
+				"DefaultValue": "FieldAccessType_Source",
+				"$type": "FieldAccessType"
+			}
+		}
+	},
+	"DataSource": {
+		"$type": "DataSource",
+		"$properties": {
+			"Category": {
+				"$type": "UIComponentData"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"DataVisualizerValue": {
+		"$type": "DataVisualizerValue",
+		"$properties": {
+			"Value": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"DebrisClusterPartInfoData": {
+		"$type": "DebrisClusterPartInfoData",
+		"$properties": {
+			"PartIndex": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"NumberOfChildren": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"SyncRestPosition": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SyncContinous": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"InEffectWorldOnly": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SplitSpeedThreshold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LinearVelocity": {
+				"$type": "Vec3"
+			},
+			"AngularVelocity": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"DebrisHavokInfo": {
+		"$type": "DebrisHavokInfo",
+		"$properties": {
+			"HavokAsset": {
+				"$type": "HavokAsset"
+			},
+			"ReserveCount": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"DebrisSystemMetrics": {
+		"$type": "DebrisSystemMetrics",
+		"$properties": {
+			"HavokParticleCount": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"HavokParticlePartCount": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"DecalAtlasTile": {
+		"$type": "DecalAtlasTile",
+		"$properties": {
+			"TileIndexX": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TileIndexY": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TileCountX": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TileCountY": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"FlipX": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"FlipY": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"DefaultSelectionItem": {
+		"$type": "DefaultSelectionItem",
+		"$properties": {
+			"DefaultSelectionQuery": {
+				"$type": "UIDataSourceInfo"
+			},
+			"DefaultSelectionIndex": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"DestructionVolumeAtlasTextureData": {
+		"$type": "DestructionVolumeAtlasTextureData",
+		"$properties": {
+			"AtlasAlphaInfluence": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaskEdgeThickness": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"DestructionVolumeProjectionData": {
+		"$type": "DestructionVolumeProjectionData",
+		"$properties": {
+			"Normal": {
+				"$type": "Vec3"
+			},
+			"TangentAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"DirectWeaponSwitchingMapData": {
+		"$type": "DirectWeaponSwitchingMapData",
+		"$properties": {
+			"Action": {
+				"DefaultValue": "EIAThrottle",
+				"$type": "EntryInputActionEnum"
+			},
+			"ToWeapon": {
+				"DefaultValue": "wsSlot0",
+				"$type": "WeaponSwitchingEnum"
+			},
+			"FireAndSwitchBackToPrev": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SwitchBackToPrevMaxTimePressed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"UseQuickSwitch": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"PreventMeleeRepeatTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"DivisibleLoopPlayerPlugins": {
+		"$type": "DivisibleLoopPlayerPlugins",
+		"$properties": {
+			"SndPlayer": {
+				"$type": "SoundGraphPluginRef"
+			},
+			"Pause": {
+				"$type": "SoundGraphPluginRef"
+			},
+			"Gain": {
+				"$type": "SoundGraphPluginRef"
+			},
+			"GainFader": {
+				"$type": "SoundGraphPluginRef"
+			}
+		}
+	},
+	"DynamicEvent": {
+		"$type": "DynamicEvent",
+		"$properties": {
+			"Id": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"DynamicLink": {
+		"$type": "DynamicLink",
+		"$properties": {
+			"Id": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"DynamicWeaponPickupSlotData": {
+		"$type": "DynamicWeaponPickupSlotData",
+		"$properties": {
+			"WeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"AltWeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"LinkedToWeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"EdgeModelInstance": {
+		"$type": "EdgeModelInstance",
+		"$properties": {
+			"Transform": {
+				"$type": "LinearTransform"
+			}
+		}
+	},
+	"EdgeModelLightMapInstance": {
+		"$type": "EdgeModelLightMapInstance",
+		"$properties": {
+			"LightMapUv": {
+				"$type": "Vec4"
+			},
+			"Position": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"EdgePointerData": {
+		"$type": "EdgePointerData",
+		"$properties": {
+			"NegativeXLimit": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PositiveXLimit": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"NegativeYLimit": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PositiveYLimit": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"EditableActionMap": {
+		"$type": "EditableActionMap",
+		"$properties": {
+			"Id": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"NameId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ActionMap": {
+				"$type": "EntryInputActionMapsData"
+			},
+			"ConfigurationLayout": {
+				"$type": "EditableActions"
+			}
+		}
+	},
+	"EditableActions": {
+		"$type": "EditableActions",
+		"$properties": {
+			"Actions": {
+				"$array": true,
+				"$type": "EditableAction"
+			}
+		}
+	},
+	"EloExpectedFunctionPoint": {
+		"$type": "EloExpectedFunctionPoint",
+		"$properties": {
+			"XValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"YValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"EloFunctionPoint": {
+		"$type": "EloFunctionPoint",
+		"$properties": {
+			"XValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"YValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"EloParameters": {
+		"$type": "EloParameters",
+		"$properties": {
+			"KWinner": {
+				"$array": true,
+				"$type": "EloFunctionPoint"
+			},
+			"KLoser": {
+				"$array": true,
+				"$type": "EloFunctionPoint"
+			},
+			"KNewbie": {
+				"$array": true,
+				"$type": "EloFunctionPoint"
+			},
+			"KCompetitor": {
+				"$array": true,
+				"$type": "EloFunctionPoint"
+			},
+			"Expected": {
+				"$array": true,
+				"$type": "EloExpectedFunctionPoint"
+			}
+		}
+	},
+	"EmitterTextureAtlasInfo": {
+		"$type": "EmitterTextureAtlasInfo",
+		"$properties": {
+			"TextureName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"MinUv": {
+				"$type": "Vec2"
+			},
+			"MaxUv": {
+				"$type": "Vec2"
+			}
+		}
+	},
+	"EmitterTextureInfo": {
+		"$type": "EmitterTextureInfo",
+		"$properties": {
+			"TextureName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"NormalmapName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"AnimationFrameCount": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AnimationFrameColumnCount": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"EnableAnimation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"EndPointData": {
+		"$type": "EndPointData",
+		"$properties": {
+			"Pos": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"EndDamping": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SpringLength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SpringAcceleration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SpringDamping": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"EnlightenDbInstance": {
+		"$type": "EnlightenDbInstance",
+		"$properties": {
+			"MeshAsset": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ObjectVariation": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"EnlightenMeshName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"GuidString": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"GeometryId": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"WorldTransform": {
+				"$type": "LinearTransform"
+			},
+			"WorldBoundingbox": {
+				"$type": "AxisAlignedBox"
+			},
+			"UvSizeX": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"UvSizeY": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"PixelSize": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"UvTransform": {
+				"$type": "Vec4"
+			},
+			"UvTranslation": {
+				"$type": "Vec2"
+			},
+			"InstanceAlbedos": {
+				"$array": true,
+				"$type": "Uint64"
+			},
+			"CacheKey": {
+				"$type": "Guid"
+			}
+		}
+	},
+	"EnlightenDbSystem": {
+		"$type": "EnlightenDbSystem",
+		"$properties": {
+			"SystemId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"AtlasStartX": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"AtlasStartY": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"OutputWidth": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"OutputHeight": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"PixelCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"PixelSize": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BoundingBox": {
+				"$type": "AxisAlignedBox"
+			},
+			"Instances": {
+				"$array": true,
+				"$type": "EnlightenDbInstance"
+			},
+			"InputSystems": {
+				"$array": true,
+				"$type": "Int32"
+			},
+			"TerrainSystem": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SystemCache": {
+				"$type": "PrecomputeCache"
+			},
+			"PreClusteringCache": {
+				"$type": "PrecomputeCache"
+			},
+			"ClusteringCache": {
+				"$type": "PrecomputeCache"
+			},
+			"VisibilityCache": {
+				"$type": "PrecomputeCache"
+			},
+			"LightTransportCache": {
+				"$type": "PrecomputeCache"
+			}
+		}
+	},
+	"EnlightenInputInstance": {
+		"$type": "EnlightenInputInstance",
+		"$properties": {
+			"Asset": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ObjectVariation": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Transform": {
+				"$type": "LinearTransform"
+			},
+			"SystemId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"EnlightenLightProbeSet": {
+		"$type": "EnlightenLightProbeSet",
+		"$properties": {
+			"SystemId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"SizeX": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"SizeY": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"SizeZ": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"BoundingBox": {
+				"$type": "AxisAlignedBox"
+			},
+			"Transform": {
+				"$type": "LinearTransform"
+			},
+			"BlendDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Priority": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Positions": {
+				"$array": true,
+				"$type": "Vec3"
+			},
+			"ValidIndices": {
+				"$array": true,
+				"$type": "Uint32"
+			},
+			"InputSystems": {
+				"$array": true,
+				"$type": "Int32"
+			},
+			"Cache": {
+				"$type": "PrecomputeCache"
+			},
+			"StaticProbeSet": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"EnlightenPipelineTerrainMesh": {
+		"$type": "EnlightenPipelineTerrainMesh",
+		"$properties": {
+			"TerrainMeshName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"BoundingBox": {
+				"$type": "AxisAlignedBox"
+			},
+			"LightMapResolution": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"UvTransform": {
+				"$type": "Vec4"
+			},
+			"UvTranslation": {
+				"$type": "Vec2"
+			}
+		}
+	},
+	"EntitlementData": {
+		"$type": "EntitlementData",
+		"$properties": {
+			"License": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"EntitlementTag": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"GroupName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ProductId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ProjectId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"UsageType": {
+				"DefaultValue": "EntitlementType_Ignored",
+				"$type": "EntitlementType"
+			},
+			"VerifyOwnership": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"EntityUid": {
+		"$type": "EntityUid",
+		"$properties": {
+			"Id": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"EntryComponentHudData": {
+		"$type": "EntryComponentHudData",
+		"$properties": {
+			"Index": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Frustum": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Visible": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SeatType": {
+				"DefaultValue": "EST_Driver",
+				"$type": "EntrySeatType"
+			},
+			"MaximizeMiniMapOnEntry": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"EventConnection": {
+		"$type": "EventConnection",
+		"$properties": {
+			"Source": {
+				"$type": "DataContainer"
+			},
+			"Target": {
+				"$type": "DataContainer"
+			},
+			"SourceEvent": {
+				"$type": "EventSpec"
+			},
+			"TargetEvent": {
+				"$type": "EventSpec"
+			},
+			"TargetType": {
+				"DefaultValue": "EventConnectionTargetType_Invalid",
+				"$type": "EventConnectionTargetType"
+			}
+		}
+	},
+	"EventScaleData": {
+		"$type": "EventScaleData",
+		"$properties": {
+			"Event": {
+				"DefaultValue": "StatEvent_Kill",
+				"$type": "StatEvent"
+			},
+			"Scale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"EventSpec": {
+		"$type": "EventSpec",
+		"$properties": {
+			"Id": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"FaceAnimationWaveMapping": {
+		"$type": "FaceAnimationWaveMapping",
+		"$properties": {
+			"WaveNameHash": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"AntEnumValue": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"FireEffectData": {
+		"$type": "FireEffectData",
+		"$properties": {
+			"Effect": {
+				"$type": "EffectBlueprint"
+			},
+			"Offset": {
+				"$type": "Vec3"
+			},
+			"Rotation": {
+				"$type": "Vec3"
+			},
+			"ZoomOffset": {
+				"$type": "Vec3"
+			},
+			"UseZoomOffset": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ZoomRotation": {
+				"$type": "Vec3"
+			},
+			"UseZoomRotation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"DisableDuringZoom": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UpdateTransform": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"StopLoopingEffects": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"FireLogicData": {
+		"$type": "FireLogicData",
+		"$properties": {
+			"HoldAndRelease": {
+				"$type": "HoldAndReleaseData"
+			},
+			"BoltAction": {
+				"$type": "BoltActionData"
+			},
+			"Recoil": {
+				"$type": "RecoilData"
+			},
+			"FireInputAction": {
+				"DefaultValue": "EIAThrottle",
+				"$type": "EntryInputActionEnum"
+			},
+			"ReloadInputAction": {
+				"DefaultValue": "EIAThrottle",
+				"$type": "EntryInputActionEnum"
+			},
+			"CycleFireModeInputAction": {
+				"DefaultValue": "EIAThrottle",
+				"$type": "EntryInputActionEnum"
+			},
+			"TriggerPullWeight": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RateOfFire": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RateOfFireForBurst": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ClientFireRateMultiplier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReloadDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HoldOffReloadUntilFireRelease": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HoldOffReloadUntilZoomRelease": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ForceReloadActionOnFireTrigger": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ReloadTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReloadTimeBulletsLeft": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReloadThreshold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PreFireDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AutomaticDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReloadLogic": {
+				"DefaultValue": "rlWeaponSwitchCancelsUnfinishedReload",
+				"$type": "ReloadLogic"
+			},
+			"ReloadType": {
+				"DefaultValue": "rtSingleBullet",
+				"$type": "ReloadType"
+			},
+			"FireLogicType": {
+				"DefaultValue": "fltSingleFire",
+				"$type": "FireLogicType"
+			},
+			"FireLogicTypeArray": {
+				"$array": true,
+				"$type": "FireLogicType"
+			},
+			"AlwaysAutoReload": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"FiringDispersionData": {
+		"$type": "FiringDispersionData",
+		"$properties": {
+			"MinAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"IncreasePerShot": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DecreasePerSecond": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"FloatOption": {
+		"$type": "FloatOption",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Min": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Max": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Step": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"FloatRange": {
+		"$type": "FloatRange",
+		"$properties": {
+			"Min": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Max": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"FloatRangeDefaultZero": {
+		"$type": "FloatRangeDefaultZero",
+		"$properties": {
+			"Min": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Max": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"FootStepTrigger": {
+		"$type": "FootStepTrigger",
+		"$properties": {
+			"Time": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"FrictionScaleAtVelocity": {
+		"$type": "FrictionScaleAtVelocity",
+		"$properties": {
+			"FrictionScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Velocity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"GameModeInformation": {
+		"$type": "GameModeInformation",
+		"$properties": {
+			"Platform": {
+				"DefaultValue": "GamePlatform_Ps3",
+				"$type": "GamePlatform"
+			},
+			"Sizes": {
+				"$array": true,
+				"$type": "GameModeSize"
+			},
+			"AllowFallbackToDefault": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"DefaultSize": {
+				"$type": "GameModeSize"
+			}
+		}
+	},
+	"GameModeSize": {
+		"$type": "GameModeSize",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ShortName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"MetaIdentifier": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"PlayerCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Teams": {
+				"$array": true,
+				"$type": "GameModeTeamSize"
+			},
+			"RoundsPerMap": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ForceSquad": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"GameModeTeamSize": {
+		"$type": "GameModeTeamSize",
+		"$properties": {
+			"PlayerCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"SquadSize": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"GameModeVariation": {
+		"$type": "GameModeVariation",
+		"$properties": {
+			"Identifier": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"GameTipData": {
+		"$type": "GameTipData",
+		"$properties": {
+			"Text": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"GameplayBone": {
+		"$type": "GameplayBone",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Bone": {
+				"DefaultValue": "GameplayBones_UndefinedBone",
+				"$type": "GameplayBones"
+			}
+		}
+	},
+	"GroundHeightData": {
+		"$type": "GroundHeightData",
+		"$properties": {
+			"WorldSize": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HeightSpan": {
+				"$type": "Vec2"
+			},
+			"Data": {
+				"$array": true,
+				"$type": "Uint16"
+			}
+		}
+	},
+	"GunMasterLevelInfo": {
+		"$type": "GunMasterLevelInfo",
+		"$properties": {
+			"CustomizeData": {
+				"$type": "CustomizeSoldierData"
+			},
+			"KillsNeeded": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"GunMasterWeaponsPreset": {
+		"$type": "GunMasterWeaponsPreset",
+		"$properties": {
+			"GunMasterLevelInfos": {
+				"$array": true,
+				"$type": "GunMasterLevelInfo"
+			},
+			"LevelOverrides": {
+				"$array": true,
+				"$type": "CustomizeSoldierData"
+			}
+		}
+	},
+	"GunSwayBaseData": {
+		"$type": "GunSwayBaseData",
+		"$properties": {
+			"BaseValue": {
+				"$type": "GunSwayDispersionData"
+			},
+			"Recoil": {
+				"$type": "GunSwayRecoilData"
+			},
+			"GunSwayLag": {
+				"$type": "GunSwayLagData"
+			}
+		}
+	},
+	"GunSwayBaseMoveData": {
+		"$type": "GunSwayBaseMoveData",
+		"$properties": {
+			"BaseValue": {
+				"$type": "GunSwayDispersionData"
+			},
+			"Moving": {
+				"$type": "GunSwayDispersionData"
+			},
+			"Recoil": {
+				"$type": "GunSwayRecoilData"
+			},
+			"GunSwayLag": {
+				"$type": "GunSwayLagData"
+			}
+		}
+	},
+	"GunSwayBaseMoveJumpData": {
+		"$type": "GunSwayBaseMoveJumpData",
+		"$properties": {
+			"BaseValue": {
+				"$type": "GunSwayDispersionData"
+			},
+			"Moving": {
+				"$type": "GunSwayDispersionData"
+			},
+			"Jumping": {
+				"$type": "GunSwayDispersionData"
+			},
+			"Sprinting": {
+				"$type": "GunSwayDispersionData"
+			},
+			"VaultingSmallObject": {
+				"$type": "GunSwayDispersionData"
+			},
+			"VaultingMediumObject": {
+				"$type": "GunSwayDispersionData"
+			},
+			"Recoil": {
+				"$type": "GunSwayRecoilData"
+			},
+			"GunSwayLag": {
+				"$type": "GunSwayLagData"
+			}
+		}
+	},
+	"GunSwayCrouchProneData": {
+		"$type": "GunSwayCrouchProneData",
+		"$properties": {
+			"NoZoom": {
+				"$type": "GunSwayBaseMoveData"
+			},
+			"Zoom": {
+				"$type": "GunSwayBaseMoveData"
+			}
+		}
+	},
+	"GunSwayDispersionData": {
+		"$type": "GunSwayDispersionData",
+		"$properties": {
+			"MinAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"IncreasePerShot": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DecreasePerSecond": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"GunSwayDispersionModData": {
+		"$type": "GunSwayDispersionModData",
+		"$properties": {
+			"MinAngleModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxAngleModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"IncreasePerShotModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DecreasePerSecondModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"GunSwayLagData": {
+		"$type": "GunSwayLagData",
+		"$properties": {
+			"MoveStrafeModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MoveForwardModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RotateYawModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RotatePitchModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReleaseModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"GunSwayRecoilData": {
+		"$type": "GunSwayRecoilData",
+		"$properties": {
+			"RecoilAmplitudeMax": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RecoilAmplitudeIncPerShot": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HorizontalRecoilAmplitudeIncPerShotMin": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HorizontalRecoilAmplitudeIncPerShotMax": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HorizontalRecoilAmplitudeMax": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RecoilAmplitudeDecreaseFactor": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"GunSwayStanceTransition": {
+		"$type": "GunSwayStanceTransition",
+		"$properties": {
+			"MaxPenaltyValue": {
+				"$type": "GunSwayDispersionData"
+			},
+			"CoolDown": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"GunSwayStanceZoomModifierData": {
+		"$type": "GunSwayStanceZoomModifierData",
+		"$properties": {
+			"DispersionMod": {
+				"$type": "GunSwayDispersionModData"
+			},
+			"RecoilMagnitudeMod": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RecoilAngleMod": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LagYawMod": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LagPitchMod": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"GunSwayStandData": {
+		"$type": "GunSwayStandData",
+		"$properties": {
+			"NoZoom": {
+				"$type": "GunSwayBaseMoveJumpData"
+			},
+			"Zoom": {
+				"$type": "GunSwayBaseMoveJumpData"
+			}
+		}
+	},
+	"HIKData": {
+		"$type": "HIKData",
+		"$properties": {
+			"ReachT": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReachR": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Pull": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Resist": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"HealerData": {
+		"$type": "HealerData",
+		"$properties": {
+			"Radius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Health": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HealingTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PickUpDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"HealingSphereData": {
+		"$type": "HealingSphereData",
+		"$properties": {
+			"Radius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HealthIncSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"HidableSoldierMeshWeaponPart": {
+		"$type": "HidableSoldierMeshWeaponPart",
+		"$properties": {
+			"WeaponMesh": {
+				"$type": "SkinnedMeshAsset"
+			},
+			"WeaponMeshBlueprint": {
+				"$type": "ObjectBlueprint"
+			},
+			"BoneName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"HideAlways": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HideInVehicleEntries": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"HitReactionComponentBinding": {
+		"$type": "HitReactionComponentBinding",
+		"$properties": {
+			"Hit": {
+				"$type": "AntRef"
+			},
+			"AllowKillFromAnimation": {
+				"$type": "AntRef"
+			},
+			"Direction": {
+				"$type": "AntRef"
+			},
+			"FiringDistance": {
+				"$type": "AntRef"
+			},
+			"BoneType": {
+				"$type": "AntRef"
+			},
+			"ImpactType": {
+				"$type": "AntRef"
+			},
+			"Immortal": {
+				"$type": "AntRef"
+			},
+			"RandomAnimationIndex": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"HoldAndReleaseData": {
+		"$type": "HoldAndReleaseData",
+		"$properties": {
+			"MaxHoldTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinPowerModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxPowerModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PowerIncreasePerSecond": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Delay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ForceFireWhenKilledHolding": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"KilledHoldingPowerModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"HudData": {
+		"$type": "HudData",
+		"$properties": {
+			"CrosshairScaleMin": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CrosshairScaleMax": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CrosshairOpacityMin": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CrosshairOpacityMax": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CrosshairOpacityModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CrosshairTypeId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"WeaponClass": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ShowMinimap": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HideAmmo": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"LowAmmoWarning": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReloadPrompt": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"InfiniteAmmo": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HideCrosshairWhenAimOnFriend": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseRenderTarget": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"RenderTargetIndex": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"HudPropertyList": {
+				"$type": "UIPartPropertyList"
+			},
+			"UseRangeMeter": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseAimWarning": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UsePredictedSight": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseWeaponOrientations": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseVelocityVectorMarker": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseLockingController": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseThrust": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseGForce": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseSkidSlip": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseClimbRate": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SeaLevelAltFreq": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CameraShakeModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"HudImpactData": {
+		"$type": "HudImpactData",
+		"$properties": {
+			"Enable": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"MinHealth": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxHealth": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinTimeVisible": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxTimeVisible": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"IndexRange": {
+		"$type": "IndexRange",
+		"$properties": {
+			"First": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Last": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"InputRecorderTrackData": {
+		"$type": "InputRecorderTrackData",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"PropertyTrack": {
+				"$type": "FloatPropertyTrackData"
+			}
+		}
+	},
+	"InputSuppressionData": {
+		"$type": "InputSuppressionData",
+		"$properties": {
+			"SuppressVehicleInput": {
+				"$array": true,
+				"$type": "ActionSuppressor"
+			}
+		}
+	},
+	"InspectAnimationTriggerData": {
+		"$type": "InspectAnimationTriggerData",
+		"$properties": {
+			"Animation": {
+				"$type": "AntRef"
+			},
+			"Probability": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"InspectViewPointData": {
+		"$type": "InspectViewPointData",
+		"$properties": {
+			"ViewPointID": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"AnimationTriggers": {
+				"$array": true,
+				"$type": "InspectAnimationTriggerData"
+			},
+			"ContinuousAnimationSignal": {
+				"$array": true,
+				"$type": "AntRef"
+			},
+			"LookAtHeight": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Yaw": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Pitch": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Distance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"FovOffset": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AdjustmentYaw": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Fixed": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"IntOption": {
+		"$type": "IntOption",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"IntentData": {
+		"$type": "IntentData",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DefaultModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"InteractionTypesData": {
+		"$type": "InteractionTypesData",
+		"$properties": {
+			"InteractionEntity": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"PickupEntity": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"AmmoCrateEntity": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"VehicleEntity": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ExplosionPackEntity": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SoldierEntity": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"InterruptFlow": {
+		"$type": "InterruptFlow",
+		"$properties": {
+			"interruptEnum": {
+				"DefaultValue": "UIInterruptID_None",
+				"$type": "UIInterruptID"
+			},
+			"interruptFlow": {
+				"$type": "UIGraphAsset"
+			}
+		}
+	},
+	"KillWeight": {
+		"$type": "KillWeight",
+		"$properties": {
+			"LowIntenseWeight": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HighIntenseWeight": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CoolDownTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"LandingGearConditionData": {
+		"$type": "LandingGearConditionData",
+		"$properties": {
+			"Height": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Velocity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Angle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"LensFlareElement": {
+		"$type": "LensFlareElement",
+		"$properties": {
+			"Shader": {
+				"$type": "SurfaceShaderBaseAsset"
+			},
+			"RayDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Size": {
+				"$type": "Vec2"
+			},
+			"SizeOccluderCurve": {
+				"$type": "Vec4"
+			},
+			"SizeScreenPosCurve": {
+				"$type": "Vec4"
+			},
+			"SizeAngleCurve": {
+				"$type": "Vec4"
+			},
+			"SizeCamDistCurve": {
+				"$type": "Vec4"
+			},
+			"SizeCamDistMax": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AlphaOccluderCurve": {
+				"$type": "Vec4"
+			},
+			"AlphaScreenPosCurve": {
+				"$type": "Vec4"
+			},
+			"AlphaAngleCurve": {
+				"$type": "Vec4"
+			},
+			"AlphaCamDistCurve": {
+				"$type": "Vec4"
+			},
+			"AlphaCamDistMax": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"LevelDescription": {
+		"$type": "LevelDescription",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Description": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"IsMultiplayer": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"IsCoop": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"IsMenu": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Components": {
+				"$array": true,
+				"$type": "LevelDescriptionComponent"
+			}
+		}
+	},
+	"LevelDescriptionInclusionCategory": {
+		"$type": "LevelDescriptionInclusionCategory",
+		"$properties": {
+			"Category": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Mode": {
+				"$array": true,
+				"$type": "CString"
+			}
+		}
+	},
+	"LevelSetup": {
+		"$type": "LevelSetup",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"InclusionOptions": {
+				"$array": true,
+				"$type": "LevelSetupOption"
+			},
+			"DifficultyIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"SubLevelNames": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"SubLevelStates": {
+				"$array": true,
+				"$type": "Int32"
+			},
+			"IsSaveGame": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ForceReloadResources": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"LevelSetupOption": {
+		"$type": "LevelSetupOption",
+		"$properties": {
+			"Criterion": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"LicenseInfo": {
+		"$type": "LicenseInfo",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ClientOnly": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"AllowStaging": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"StagingPlatform": {
+				"DefaultValue": "GamePlatform_Ps3",
+				"$type": "GamePlatform"
+			}
+		}
+	},
+	"LinearTransform": {
+		"$type": "LinearTransform",
+		"$properties": {
+			"right": {
+				"$type": "Vec3"
+			},
+			"up": {
+				"$type": "Vec3"
+			},
+			"forward": {
+				"$type": "Vec3"
+			},
+			"trans": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"LinkConnection": {
+		"$type": "LinkConnection",
+		"$properties": {
+			"Source": {
+				"$type": "DataContainer"
+			},
+			"Target": {
+				"$type": "DataContainer"
+			},
+			"SourceFieldId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"TargetFieldId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"LockedSettingConfig": {
+		"$type": "LockedSettingConfig",
+		"$properties": {
+			"Key": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"LodBinding": {
+		"$type": "LodBinding",
+		"$properties": {
+			"DisableControllerUpdate": {
+				"$type": "AntRef"
+			},
+			"DisablePoseUpdate": {
+				"$type": "AntRef"
+			},
+			"DistanceFromCamera": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"LookConstraintsData": {
+		"$type": "LookConstraintsData",
+		"$properties": {
+			"MinLookYaw": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxLookYaw": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinLookPitch": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxLookPitch": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"MPModeData": {
+		"$type": "MPModeData",
+		"$properties": {
+			"VehiclePoints": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"ManualDataEntry": {
+		"$type": "ManualDataEntry",
+		"$properties": {
+			"Platform": {
+				"DefaultValue": "GamePlatform_Ps3",
+				"$type": "GamePlatform"
+			},
+			"Language": {
+				"DefaultValue": "LanguageFormat_English",
+				"$type": "LanguageFormat"
+			},
+			"Textures": {
+				"$array": true,
+				"$type": "TextureAsset"
+			}
+		}
+	},
+	"MapRotataionLookup": {
+		"$type": "MapRotataionLookup",
+		"$properties": {
+			"GameMode": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"MapRotationConfig": {
+		"$type": "MapRotationConfig",
+		"$properties": {
+			"MapRotationId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"NameSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DescSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Mod": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"RandomizeStartingMap": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"GameMode": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"MatchmakingCreateGameParameters": {
+		"$type": "MatchmakingCreateGameParameters",
+		"$properties": {
+			"GameTopology": {
+				"DefaultValue": "MatchmakingNetworkTopology_Disabled",
+				"$type": "MatchmakingNetworkTopology"
+			},
+			"PeerMode": {
+				"DefaultValue": "MatchmakingPeer2PeerMode_FullMesh",
+				"$type": "MatchmakingPeer2PeerMode"
+			},
+			"VoipTopology": {
+				"DefaultValue": "MatchmakingNetworkTopology_Disabled",
+				"$type": "MatchmakingNetworkTopology"
+			},
+			"Settings": {
+				"$type": "MatchmakingGameSettings"
+			},
+			"Attributes": {
+				"$array": true,
+				"$type": "MatchmakingGameAttribute"
+			},
+			"QueueCapacity": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"MatchmakingCriteria": {
+		"$type": "MatchmakingCriteria",
+		"$properties": {
+			"SizeRule": {
+				"$type": "MatchmakingSizeRule"
+			},
+			"PingSiteRule": {
+				"$type": "MatchmakingPingSiteRule"
+			},
+			"RankedRule": {
+				"$type": "MatchmakingRankedRule"
+			},
+			"GenericRules": {
+				"$array": true,
+				"$type": "MatchmakingGenericRule"
+			},
+			"VirtualizedRule": {
+				"$type": "MatchmakingVirtualizedRule"
+			},
+			"UEDRules": {
+				"$array": true,
+				"$type": "MatchmakingUserExtendedDataRule"
+			}
+		}
+	},
+	"MatchmakingGameAttribute": {
+		"$type": "MatchmakingGameAttribute",
+		"$properties": {
+			"Attribute": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Override": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"MatchmakingGameSettings": {
+		"$type": "MatchmakingGameSettings",
+		"$properties": {
+			"OpenToBrowsing": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"OpenToInvites": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"OpenToMatchmaking": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"OpenToJoinByPlayer": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HostMigratable": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Ranked": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"AdminOnlyInvites": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"EnforceSingleGroupJoin": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"JoinInProgressSupported": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"AdminInvitesOnlyIgnoreEntryChecks": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"EnablePersistedGameId": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"AllowSameTeamId": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"MatchmakingGenericRule": {
+		"$type": "MatchmakingGenericRule",
+		"$properties": {
+			"Rule": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"MinFitThresHold": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Setting": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DesiredValues": {
+				"$array": true,
+				"$type": "MatchmakingRuleString"
+			},
+			"IgnoreIfDefault": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"MergeValues": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SortValues": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"MatchmakingPingSiteRule": {
+		"$type": "MatchmakingPingSiteRule",
+		"$properties": {
+			"MinFitThreshold": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"MatchmakingRankedRule": {
+		"$type": "MatchmakingRankedRule",
+		"$properties": {
+			"MinFitThreshold": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"MatchmakingRuleString": {
+		"$type": "MatchmakingRuleString",
+		"$properties": {
+			"Value": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Platform": {
+				"DefaultValue": "MatchmakingPlatform_PC",
+				"$type": "MatchmakingPlatform"
+			},
+			"Licenses": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"UseOnlyIfEmpty": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"MatchmakingSizeConfiguration": {
+		"$type": "MatchmakingSizeConfiguration",
+		"$properties": {
+			"Platform": {
+				"DefaultValue": "MatchmakingPlatform_PC",
+				"$type": "MatchmakingPlatform"
+			},
+			"Settings": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"DesiredPlayerCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"MinPlayerCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"MaxPlayerCapacity": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"MinFitThreshold": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"MatchmakingSizeRule": {
+		"$type": "MatchmakingSizeRule",
+		"$properties": {
+			"Setting": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Configurations": {
+				"$array": true,
+				"$type": "MatchmakingSizeConfiguration"
+			}
+		}
+	},
+	"MatchmakingUserExtendedDataRule": {
+		"$type": "MatchmakingUserExtendedDataRule",
+		"$properties": {
+			"Rule": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"MinFitThresHold": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"MatchmakingVirtualizedRule": {
+		"$type": "MatchmakingVirtualizedRule",
+		"$properties": {
+			"MinFitThreshold": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"VirtualizationMode": {
+				"DefaultValue": "MatchmakingVirtualizationMode_Virtualized",
+				"$type": "MatchmakingVirtualizationMode"
+			}
+		}
+	},
+	"MaterialInteractionGridRow": {
+		"$type": "MaterialInteractionGridRow",
+		"$properties": {
+			"Items": {
+				"$array": true,
+				"$type": "MaterialRelationPropertyPair"
+			}
+		}
+	},
+	"MaterialRelationPropertyPair": {
+		"$type": "MaterialRelationPropertyPair",
+		"$properties": {
+			"PhysicsMaterialProperties": {
+				"$array": true,
+				"$type": "PhysicsMaterialRelationPropertyData"
+			},
+			"PhysicsPropertyProperties": {
+				"$array": true,
+				"$type": "PhysicsPropertyRelationPropertyData"
+			}
+		}
+	},
+	"MeshScatteringMaskScaleDrawMethodData": {
+		"$type": "MeshScatteringMaskScaleDrawMethodData",
+		"$properties": {}
+	},
+	"MeshVariationDatabaseMaterial": {
+		"$type": "MeshVariationDatabaseMaterial",
+		"$properties": {
+			"Material": {
+				"$type": "MeshMaterial"
+			},
+			"MaterialVariation": {
+				"$type": "MeshMaterialVariation"
+			},
+			"TextureParameters": {
+				"$array": true,
+				"$type": "TextureShaderParameter"
+			}
+		}
+	},
+	"MeshVariationInfo": {
+		"$type": "MeshVariationInfo",
+		"$properties": {
+			"MeshAsset": {
+				"$type": "MeshAsset"
+			},
+			"OrigMeshAsset": {
+				"$type": "MeshAsset"
+			},
+			"VariationAsset": {
+				"$type": "ObjectVariation"
+			}
+		}
+	},
+	"MessageInfo": {
+		"$type": "MessageInfo",
+		"$properties": {
+			"RowTypeName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"MessageQueueSize": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"NormalMessageTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ShortMessageTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"MessageLineData": {
+		"$type": "MessageLineData",
+		"$properties": {
+			"MessageSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"EntryInputAction": {
+				"DefaultValue": "EIAThrottle",
+				"$type": "EntryInputActionEnum"
+			}
+		}
+	},
+	"MinimapCameraOffsetData": {
+		"$type": "MinimapCameraOffsetData",
+		"$properties": {
+			"Position": {
+				"$type": "Vec2"
+			},
+			"CameraFov": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"MinimapData": {
+		"$type": "MinimapData",
+		"$properties": {
+			"Position": {
+				"$type": "Vec2"
+			},
+			"AnchorPosHorizontal": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AnchorPosVertical": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Size": {
+				"$type": "Vec2"
+			},
+			"CameraFov": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CameraDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CameraLookDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OverlayColor": {
+				"$type": "Vec3"
+			},
+			"OverlayAlpha": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CameraPosition": {
+				"$type": "Vec3"
+			},
+			"CameraRotation": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RotationFromPlayer": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"PositionFromPlayer": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"CenterOnCombatArea": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"InnerZoomFactor": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"MaxZoomLevels": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"StartZoomLevel": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"MissileLockableInfoData": {
+		"$type": "MissileLockableInfoData",
+		"$properties": {
+			"HeatSignature": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RadarSignature": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"MissileUnguidedData": {
+		"$type": "MissileUnguidedData",
+		"$properties": {
+			"UseStaticPosition": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"StaticPosition": {
+				"$type": "Vec2"
+			},
+			"UseTargetPosition": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"TargetPositionOffset": {
+				"$type": "Vec2"
+			}
+		}
+	},
+	"MixGroupPropertyValue": {
+		"$type": "MixGroupPropertyValue",
+		"$properties": {
+			"Property": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"MixerPresetGroupData": {
+		"$type": "MixerPresetGroupData",
+		"$properties": {
+			"Group": {
+				"$type": "MixGroup"
+			},
+			"State": {
+				"DefaultValue": "MixGroupState_Normal",
+				"$type": "MixGroupState"
+			},
+			"AttackTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReleaseTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"IsDominant": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Properties": {
+				"$array": true,
+				"$type": "MixGroupPropertyValue"
+			}
+		}
+	},
+	"MixerPresetNodeData": {
+		"$type": "MixerPresetNodeData",
+		"$properties": {
+			"Node": {
+				"$type": "AudioGraphNodeData"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"MovementComponentBinding": {
+		"$type": "MovementComponentBinding",
+		"$properties": {
+			"AnimationControlled": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"NearTargetDetonationData": {
+		"$type": "NearTargetDetonationData",
+		"$properties": {
+			"DetonateNearTarget": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"DetonationRadius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxDetonationDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinDetonationDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"NestedList": {
+		"$type": "NestedList",
+		"$properties": {
+			"Label": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Index": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ListDataSource": {
+				"$type": "UIDataSourceInfo"
+			},
+			"DynamicShowList": {
+				"$type": "UIDataSourceInfo"
+			},
+			"StaticItems": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"DefaultHighlighted": {
+				"$type": "DefaultSelectionItem"
+			},
+			"UseAsNormalListRows": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"RowType": {
+				"DefaultValue": "MixedRows",
+				"$type": "UIListRowType"
+			},
+			"HiddenOnPC": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HiddenOnXenon": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HighLightOnUpdate": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"NetworkDataId": {
+		"$type": "NetworkDataId",
+		"$properties": {
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"NetworkVoteDetails": {
+		"$type": "NetworkVoteDetails",
+		"$properties": {
+			"Personal": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Issuer": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"VoteId": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			}
+		}
+	},
+	"NormalizeSettings": {
+		"$type": "NormalizeSettings",
+		"$properties": {
+			"Normalize": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Minimum": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Maximum": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Lower": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Upper": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Velocity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"OnlineEnvironmentConsoleUrl": {
+		"$type": "OnlineEnvironmentConsoleUrl",
+		"$properties": {
+			"Urls": {
+				"$array": true,
+				"$type": "OnlineEnvironmentConsoleUrlData"
+			}
+		}
+	},
+	"OnlineEnvironmentConsoleUrlData": {
+		"$type": "OnlineEnvironmentConsoleUrlData",
+		"$properties": {
+			"Platform": {
+				"DefaultValue": "GamePlatform_Ps3",
+				"$type": "GamePlatform"
+			},
+			"Url": {
+				"$type": "OnlineEnvironmentUrl"
+			}
+		}
+	},
+	"OnlineEnvironmentUrl": {
+		"$type": "OnlineEnvironmentUrl",
+		"$properties": {
+			"Urls": {
+				"$array": true,
+				"$type": "OnlineEnvironmentUrlData"
+			}
+		}
+	},
+	"OnlineEnvironmentUrlData": {
+		"$type": "OnlineEnvironmentUrlData",
+		"$properties": {
+			"Url": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Environment": {
+				"DefaultValue": "OnlineEnvironment_Development",
+				"$type": "OnlineEnvironment"
+			}
+		}
+	},
+	"OnlinePlatformConfiguration": {
+		"$type": "OnlinePlatformConfiguration",
+		"$properties": {
+			"Platform": {
+				"DefaultValue": "GamePlatform_Ps3",
+				"$type": "GamePlatform"
+			},
+			"IsFallback": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Services": {
+				"$type": "OnlineServicesAsset"
+			},
+			"ClientBackends": {
+				"$array": true,
+				"$type": "PresenceBackendData"
+			},
+			"ServerBackends": {
+				"$array": true,
+				"$type": "ServerBackendData"
+			}
+		}
+	},
+	"OnlineProviderConfiguration": {
+		"$type": "OnlineProviderConfiguration",
+		"$properties": {
+			"Platform": {
+				"DefaultValue": "GamePlatform_Ps3",
+				"$type": "GamePlatform"
+			},
+			"IsServer": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ServiceName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Client": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"SKU": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Version": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ServerSocketPacketSize": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"OverHeatData": {
+		"$type": "OverHeatData",
+		"$properties": {
+			"HeatPerBullet": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HeatDropPerSecond": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OverHeatPenaltyTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OverHeatThreshold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OverHeatEffect": {
+				"$type": "FireEffectData"
+			}
+		}
+	},
+	"PackagingDetailInfo": {
+		"$type": "PackagingDetailInfo",
+		"$properties": {
+			"MipsToSkip": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"LodsToSkip": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"IncludeAnimation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"IncludeMeshes": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"IncludeSounds": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"IncludeTextures": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"PartInfoData": {
+		"$type": "PartInfoData",
+		"$properties": {
+			"Aabb": {
+				"$type": "AxisAlignedBox"
+			},
+			"Translation": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"PathfindingBlob": {
+		"$type": "PathfindingBlob",
+		"$properties": {
+			"BlobId": {
+				"$type": "Guid"
+			},
+			"BlobSize": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ChunkSizes": {
+				"$array": true,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"PathfindingObjectCategoryRepresentation": {
+		"$type": "PathfindingObjectCategoryRepresentation",
+		"$properties": {
+			"Category": {
+				"$type": "PathfindingObjectCategoryAsset"
+			},
+			"Representation": {
+				"DefaultValue": "PathfindingRepresentation_Ignore",
+				"$type": "PathfindingRepresentation"
+			}
+		}
+	},
+	"PeerCreateGameParameters": {
+		"$type": "PeerCreateGameParameters",
+		"$properties": {
+			"Base": {
+				"$type": "MatchmakingCreateGameParameters"
+			},
+			"PlayerCapacity": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"PerformanceFpsHistogram": {
+		"$type": "PerformanceFpsHistogram",
+		"$properties": {
+			"Below5": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Below10": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Below15": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Below20": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Below25": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Below30": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Below60": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Above60": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"PersistenceConsumableMapping": {
+		"$type": "PersistenceConsumableMapping",
+		"$properties": {
+			"Group": {
+				"DefaultValue": "ConsumableGroup_0",
+				"$type": "ConsumableGroup"
+			}
+		}
+	},
+	"PersistentValueTemplateData": {
+		"$type": "PersistentValueTemplateData",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DefaultValue": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DefaultFloatValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DefaultIntValue": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"ValueType": {
+				"DefaultValue": "PersistentValueType_Set",
+				"$type": "PersistentValueType"
+			},
+			"DataType": {
+				"DefaultValue": "PersistentValueDataType_Decimal",
+				"$type": "PersistentValueDataType"
+			},
+			"HistoryType": {
+				"DefaultValue": "PersistentValueHistoryType_None",
+				"$type": "PersistentValueHistoryType"
+			},
+			"Group": {
+				"DefaultValue": "AwardGroup_Undefined",
+				"$type": "AwardGroup"
+			},
+			"ClubStat": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ForceIntoTemplate": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"PhysicsDrivenAnimationEntityBinding": {
+		"$type": "PhysicsDrivenAnimationEntityBinding",
+		"$properties": {
+			"AimLeftRight": {
+				"$type": "AntRef"
+			},
+			"AimUpDown": {
+				"$type": "AntRef"
+			},
+			"Crouch": {
+				"$type": "AntRef"
+			},
+			"ForceSetTrajectory": {
+				"$type": "AntRef"
+			},
+			"InAir": {
+				"$type": "AntRef"
+			},
+			"Skydive": {
+				"$type": "AntRef"
+			},
+			"Parachute": {
+				"$type": "AntRef"
+			},
+			"Swim": {
+				"$type": "AntRef"
+			},
+			"InputBackward": {
+				"$type": "AntRef"
+			},
+			"InputForward": {
+				"$type": "AntRef"
+			},
+			"InputLeft": {
+				"$type": "AntRef"
+			},
+			"InputRight": {
+				"$type": "AntRef"
+			},
+			"IsEnemy": {
+				"$type": "AntRef"
+			},
+			"Jump": {
+				"$type": "AntRef"
+			},
+			"LeanLeftRight": {
+				"$type": "AntRef"
+			},
+			"Prone": {
+				"$type": "AntRef"
+			},
+			"Sprint": {
+				"$type": "AntRef"
+			},
+			"GroundSupported": {
+				"$type": "AntRef"
+			},
+			"GroundNormal": {
+				"$type": "AntRef"
+			},
+			"GroundDistance": {
+				"$type": "AntRef"
+			},
+			"GroundAngleZ": {
+				"$type": "AntRef"
+			},
+			"GroundAngleX": {
+				"$type": "AntRef"
+			},
+			"GroundAngleFromNormal": {
+				"$type": "AntRef"
+			},
+			"IsClientAnimatable": {
+				"$type": "AntRef"
+			},
+			"CustomizationScreen": {
+				"$type": "AntRef"
+			},
+			"Minimal3pServer": {
+				"$type": "AntRef"
+			},
+			"VerticalImpact": {
+				"$type": "AntRef"
+			},
+			"FalseSignal": {
+				"$type": "AntRef"
+			},
+			"LockArmsToCameraWeight": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"PhysicsPartInfo": {
+		"$type": "PhysicsPartInfo",
+		"$properties": {
+			"PartComponentIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"HealthStateIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"PickupSettingsData": {
+		"$type": "PickupSettingsData",
+		"$properties": {
+			"MeshRenderOffset": {
+				"$type": "Vec3"
+			},
+			"MeshRenderRotation": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"PitchModifier": {
+		"$type": "PitchModifier",
+		"$properties": {
+			"PitchVal": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Offset": {
+				"$type": "Vec3"
+			},
+			"PitchAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"PlayerScore": {
+		"$type": "PlayerScore",
+		"$properties": {
+			"Rank": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Kills": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Deaths": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ScoreMultiplier": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Score": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"GlobalScoreOriginal": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"GlobalScoreUpdated": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Time": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"GunMasterLevel": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"PointEnvelopePoint": {
+		"$type": "PointEnvelopePoint",
+		"$properties": {
+			"X": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Y": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"PoissonRadialBlurData": {
+		"$type": "PoissonRadialBlurData",
+		"$properties": {
+			"BlendFactor": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PoissonDiscScale": {
+				"$type": "Vec2"
+			},
+			"RadialScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RadialExponent": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"PolynomialTempData": {
+		"$type": "PolynomialTempData",
+		"$properties": {
+			"Coefficients": {
+				"$type": "Vec4"
+			},
+			"ScaleValue": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinClamp": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxClamp": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"PoseConstraintsData": {
+		"$type": "PoseConstraintsData",
+		"$properties": {
+			"StandPose": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"CrouchPose": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"PronePose": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"PoseTransitionTime": {
+		"$type": "PoseTransitionTime",
+		"$properties": {
+			"ToPose": {
+				"DefaultValue": "CharacterPoseType_Stand",
+				"$type": "CharacterPoseType"
+			},
+			"TransitionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"PrecomputeCache": {
+		"$type": "PrecomputeCache",
+		"$properties": {
+			"Guid": {
+				"$type": "Guid"
+			},
+			"Key": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"CachedDataEnable": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"PresetTypeConfig": {
+		"$type": "PresetTypeConfig",
+		"$properties": {
+			"PresetId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Key": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"NameSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DescSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Predefined": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"LockedSettings": {
+				"$array": true,
+				"$type": "LockedSettingConfig"
+			}
+		}
+	},
+	"ProfileOptionDataEnumItem": {
+		"$type": "ProfileOptionDataEnumItem",
+		"$properties": {
+			"DisplayName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Default": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"PropertyConnection": {
+		"$type": "PropertyConnection",
+		"$properties": {
+			"Source": {
+				"$type": "DataContainer"
+			},
+			"Target": {
+				"$type": "DataContainer"
+			},
+			"SourceFieldId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"TargetFieldId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"Ps3AgeLevels": {
+		"$type": "Ps3AgeLevels",
+		"$properties": {
+			"AgeLevel7": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"AgeLevel8": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"AgeLevel9": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"AgeLevel10": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"Ps3ParentalLockAgeSettings": {
+		"$type": "Ps3ParentalLockAgeSettings",
+		"$properties": {
+			"Region": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"AgeLevels": {
+				"$type": "Ps3AgeLevels"
+			},
+			"CountryOverrides": {
+				"$type": "Ps3ParentalLockAgeSettingsOverrides"
+			}
+		}
+	},
+	"Ps3ParentalLockAgeSettingsForCountry": {
+		"$type": "Ps3ParentalLockAgeSettingsForCountry",
+		"$properties": {
+			"CountryCode": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"AgeLevels": {
+				"$type": "Ps3AgeLevels"
+			}
+		}
+	},
+	"Ps3SkuSettings": {
+		"$type": "Ps3SkuSettings",
+		"$properties": {
+			"TitleId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"SpId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"GrantsOnlinePass": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"RagdollBinding": {
+		"$type": "RagdollBinding",
+		"$properties": {
+			"RagdollOnBack": {
+				"$type": "AntRef"
+			},
+			"RagdollBlend": {
+				"$type": "AntRef"
+			},
+			"RagdollForceBlendDisabled": {
+				"$type": "AntRef"
+			},
+			"RagdollActiveTime": {
+				"$type": "AntRef"
+			},
+			"RagdollFullyBlendedIn": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"ReadinessLevelCharacteristics": {
+		"$type": "ReadinessLevelCharacteristics",
+		"$properties": {
+			"MinReactionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxReactionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ReductionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"ReadinessLevels": {
+		"$type": "ReadinessLevels",
+		"$properties": {
+			"Patrol": {
+				"$type": "ReadinessLevelCharacteristics"
+			},
+			"Ready": {
+				"$type": "ReadinessLevelCharacteristics"
+			},
+			"Combat": {
+				"$type": "ReadinessLevelCharacteristics"
+			}
+		}
+	},
+	"RecoilData": {
+		"$type": "RecoilData",
+		"$properties": {
+			"MaxRecoilAngleX": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinRecoilAngleX": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxRecoilAngleY": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinRecoilAngleY": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxRecoilAngleZ": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinRecoilAngleZ": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxRecoilFov": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinRecoilFov": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RecoilFollowsDispersion": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"RectangularCoverageData": {
+		"$type": "RectangularCoverageData",
+		"$properties": {}
+	},
+	"RegularCameraViewData": {
+		"$type": "RegularCameraViewData",
+		"$properties": {
+			"FLIREnabled": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"InputSuppression": {
+				"$type": "InputSuppressionData"
+			},
+			"FieldOfView": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AllowFieldOfViewScaling": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Mesh": {
+				"$type": "RigidMeshAsset"
+			},
+			"MaskMeshBlueprint": {
+				"$type": "ObjectBlueprint"
+			},
+			"LockMeshToRenderView": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"MeshOffset": {
+				"$type": "Vec3"
+			},
+			"ScreenExposureAreaScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"RibbonPointData": {
+		"$type": "RibbonPointData",
+		"$properties": {
+			"Left": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Right": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"UserMaskLeft": {
+				"$type": "Vec4"
+			},
+			"UserMaskRight": {
+				"$type": "Vec4"
+			}
+		}
+	},
+	"RichPresenceContextSetting": {
+		"$type": "RichPresenceContextSetting",
+		"$properties": {
+			"Context": {
+				"$type": "RichPresenceContext"
+			},
+			"Value": {
+				"$type": "RichPresenceContextValue"
+			}
+		}
+	},
+	"RichPresenceProperty": {
+		"$type": "RichPresenceProperty",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"PropertyType": {
+				"DefaultValue": "RichPresencePropertyType_Float",
+				"$type": "RichPresencePropertyType"
+			}
+		}
+	},
+	"RigidMeshSocketTransform": {
+		"$type": "RigidMeshSocketTransform",
+		"$properties": {
+			"SocketObject": {
+				"$type": "WeaponRegularSocketObjectData"
+			},
+			"Transform": {
+				"$type": "LinearTransform"
+			}
+		}
+	},
+	"RotateToHitData": {
+		"$type": "RotateToHitData",
+		"$properties": {
+			"RotationSpeedFactor": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"RotorModelData": {
+		"$type": "RotorModelData",
+		"$properties": {
+			"RotationRpm": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PartIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"RumbleFiringData": {
+		"$type": "RumbleFiringData",
+		"$properties": {
+			"LowRumble": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HighRumble": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RumbleDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SamplerPlugins": {
+		"$type": "SamplerPlugins",
+		"$properties": {
+			"SndPlayer": {
+				"$type": "SoundGraphPluginRef"
+			},
+			"Resample": {
+				"$type": "SoundGraphPluginRef"
+			},
+			"Pause": {
+				"$type": "SoundGraphPluginRef"
+			},
+			"Gain": {
+				"$type": "SoundGraphPluginRef"
+			}
+		}
+	},
+	"ScenarioTaskData": {
+		"$type": "ScenarioTaskData",
+		"$properties": {
+			"WorldAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"StartPoint": {
+				"$type": "Vec3"
+			},
+			"ScenarioId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"ActorId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"PartId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"LevelId": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"ConnectTransforms": {
+				"$array": true,
+				"$type": "LinearTransform"
+			},
+			"EndPointWorldOffset": {
+				"$type": "Vec3"
+			},
+			"TriggerScenario": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"StartTurnDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"StartTimerDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TriggerScenarioDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"UseClientPosition": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"ScoringBucketUnlockData": {
+		"$type": "ScoringBucketUnlockData",
+		"$properties": {
+			"PointsNeeded": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"UnlockInfo": {
+				"$type": "BasicUnlockInfo"
+			}
+		}
+	},
+	"ScreenshotInfo": {
+		"$type": "ScreenshotInfo",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"CropImage": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"CropImageX1": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"CropImageX2": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"CropImageY1": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"CropImageY2": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ResizeOutputImage": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ResizeOutputImageWidth": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ResizeOutputImageHeight": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"SensingLimits": {
+		"$type": "SensingLimits",
+		"$properties": {
+			"HearingDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HearingCutoff": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ViewAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ViewDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PeripheralViewAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PeripheralViewDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PeripheralMovementCutoff": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SensingSphere": {
+		"$type": "SensingSphere",
+		"$properties": {
+			"Position": {
+				"$type": "Vec3"
+			},
+			"RadiusSqr": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SensitivityAtVelocity": {
+		"$type": "SensitivityAtVelocity",
+		"$properties": {
+			"SteeringSensitivity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Velocity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SequenceEventData": {
+		"$type": "SequenceEventData",
+		"$properties": {
+			"Event": {
+				"$type": "EventSpec"
+			},
+			"Time": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"ServerBackendAttributeMapping": {
+		"$type": "ServerBackendAttributeMapping",
+		"$properties": {
+			"Attribute": {
+				"DefaultValue": "ServerBackendAttribute_Level",
+				"$type": "ServerBackendAttribute"
+			},
+			"Setting": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DefaultValue": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"ServerInfoSetting": {
+		"$type": "ServerInfoSetting",
+		"$properties": {
+			"Key": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"IsBool": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"SettingConfig": {
+		"$type": "SettingConfig",
+		"$properties": {
+			"Key": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"NameSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DescSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Ranked": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Default": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Min": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Max": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"ShaderParameterVector": {
+		"$type": "ShaderParameterVector",
+		"$properties": {
+			"ParameterName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"$type": "Vec4"
+			}
+		}
+	},
+	"ShotConfigData": {
+		"$type": "ShotConfigData",
+		"$properties": {
+			"InitialPosition": {
+				"$type": "Vec3"
+			},
+			"InitialDirection": {
+				"$type": "Vec3"
+			},
+			"InitialSpeed": {
+				"$type": "Vec3"
+			},
+			"InheritWeaponSpeedAmount": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MuzzleExplosion": {
+				"$type": "ExplosionEntityData"
+			},
+			"ProjectileData": {
+				"$type": "ProjectileEntityData"
+			},
+			"SecondaryProjectileData": {
+				"$type": "ProjectileEntityData"
+			},
+			"Projectile": {
+				"$type": "ProjectileBlueprint"
+			},
+			"SecondaryProjectile": {
+				"$type": "ProjectileBlueprint"
+			},
+			"AlternateProjectiles": {
+				"$array": true,
+				"$type": "UnlockableProjectile"
+			},
+			"SpawnDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"NumberOfBulletsPerShell": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"NumberOfBulletsPerShot": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"NumberOfBulletsPerBurst": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"RelativeTargetAiming": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ForceSpawnToCamera": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SpawnVisualAtWeaponBone": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ActiveForceSpawnToCamera": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"SimpleAnimationControlBinding": {
+		"$type": "SimpleAnimationControlBinding",
+		"$properties": {
+			"LocoTarget": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"SimpleMovementActionTimeData": {
+		"$type": "SimpleMovementActionTimeData",
+		"$properties": {
+			"Time": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxVariation": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SkyCloudLayer": {
+		"$type": "SkyCloudLayer",
+		"$properties": {
+			"Altitude": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TileFactor": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Rotation": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Speed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SunLightIntensity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SunLightPower": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AmbientLightIntensity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Color": {
+				"$type": "Vec3"
+			},
+			"AlphaMul": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Texture": {
+				"$type": "TextureAsset"
+			}
+		}
+	},
+	"SmokeJammingData": {
+		"$type": "SmokeJammingData",
+		"$properties": {
+			"EnableSmokeJamming": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"MaxRadius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinRadius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"JammingTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TargetUpdateTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"JammingPositionIsLocationDependent": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ReportJammedBasedOnStartPosition": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"SoldierAnimatedCameraData": {
+		"$type": "SoldierAnimatedCameraData",
+		"$properties": {
+			"EnableFeature": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"CameraTransitionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SoldierDetonationData": {
+		"$type": "SoldierDetonationData",
+		"$properties": {
+			"HasSoldierDetonation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UseAngle": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Angle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Radius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SoldierDetonationActivationDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinSpeedForActivation": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SoldierEmoteBinding": {
+		"$type": "SoldierEmoteBinding",
+		"$properties": {
+			"Speak": {
+				"$type": "AntRef"
+			},
+			"IsSquadLeader": {
+				"$type": "AntRef"
+			},
+			"EmoteSpot": {
+				"$type": "AntRef"
+			},
+			"EmoteOk": {
+				"$type": "AntRef"
+			},
+			"EmoteNeedARide": {
+				"$type": "AntRef"
+			},
+			"EmoteGoGoGo": {
+				"$type": "AntRef"
+			},
+			"EmoteNeedBackup": {
+				"$type": "AntRef"
+			},
+			"EmoteThanks": {
+				"$type": "AntRef"
+			},
+			"EmoteNeedMedic": {
+				"$type": "AntRef"
+			},
+			"EmoteFollowMe": {
+				"$type": "AntRef"
+			},
+			"EmoteNeedAmmo": {
+				"$type": "AntRef"
+			},
+			"EmoteSorry": {
+				"$type": "AntRef"
+			},
+			"EmoteNo": {
+				"$type": "AntRef"
+			},
+			"EmoteDefendCapturePoint": {
+				"$type": "AntRef"
+			},
+			"EmoteAttackCapturePoint": {
+				"$type": "AntRef"
+			},
+			"EmoteMoveToPosition": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"SoldierHeadCollisionPoseData": {
+		"$type": "SoldierHeadCollisionPoseData",
+		"$properties": {
+			"IdleOffset": {
+				"$type": "Vec3"
+			},
+			"MovingForwardOffset": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"SoldierHealthModuleBinding": {
+		"$type": "SoldierHealthModuleBinding",
+		"$properties": {
+			"HeadShot": {
+				"$type": "AntRef"
+			},
+			"LeftArmHit": {
+				"$type": "AntRef"
+			},
+			"RightArmHit": {
+				"$type": "AntRef"
+			},
+			"LeftLegHit": {
+				"$type": "AntRef"
+			},
+			"RightLegHit": {
+				"$type": "AntRef"
+			},
+			"OnGround": {
+				"$type": "AntRef"
+			},
+			"DeathAnimationTriggered": {
+				"$type": "AntRef"
+			},
+			"RandomAnimationIndex": {
+				"$type": "AntRef"
+			},
+			"Sprinting": {
+				"$type": "AntRef"
+			},
+			"HitLeft": {
+				"$type": "AntRef"
+			},
+			"HitRight": {
+				"$type": "AntRef"
+			},
+			"HitFront": {
+				"$type": "AntRef"
+			},
+			"HitBack": {
+				"$type": "AntRef"
+			},
+			"DeathHitDirection": {
+				"$type": "AntRef"
+			},
+			"Explosion": {
+				"$type": "AntRef"
+			},
+			"Dead": {
+				"$type": "AntRef"
+			},
+			"Revived": {
+				"$type": "AntRef"
+			},
+			"RandomValue": {
+				"$type": "AntRef"
+			},
+			"Pose": {
+				"$type": "AntRef"
+			},
+			"RightSpeed": {
+				"$type": "AntRef"
+			},
+			"ForwardSpeed": {
+				"$type": "AntRef"
+			},
+			"CriticallyHit": {
+				"$type": "AntRef"
+			},
+			"InteractiveManDown": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"SoldierMeshData": {
+		"$type": "SoldierMeshData",
+		"$properties": {
+			"Mesh": {
+				"$type": "SkinnedMeshAsset"
+			},
+			"MeshBlueprint": {
+				"$type": "ObjectBlueprint"
+			},
+			"RandomGroup": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"SoldierParachuteBinding": {
+		"$type": "SoldierParachuteBinding",
+		"$properties": {
+			"Enabled": {
+				"$type": "AntRef"
+			},
+			"SteerLeftRight": {
+				"$type": "AntRef"
+			},
+			"AccelerateBrake": {
+				"$type": "AntRef"
+			},
+			"Pitch": {
+				"$type": "AntRef"
+			},
+			"Roll": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"SoldierWeaponDispersion": {
+		"$type": "SoldierWeaponDispersion",
+		"$properties": {
+			"StandDispersion": {
+				"$type": "FiringDispersionData"
+			},
+			"CrouchDispersion": {
+				"$type": "FiringDispersionData"
+			},
+			"ProneDispersion": {
+				"$type": "FiringDispersionData"
+			},
+			"JumpDispersionAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ProneTransitionDispersionAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MoveDispersionAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MoveZoomedDispersionAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DecreasePerSecond": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SoundDataChunk": {
+		"$type": "SoundDataChunk",
+		"$properties": {
+			"ChunkId": {
+				"$type": "Guid"
+			},
+			"ChunkSize": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"SoundGraphInfo": {
+		"$type": "SoundGraphInfo",
+		"$properties": {
+			"Voices": {
+				"$array": true,
+				"$type": "SoundGraphVoiceInfo"
+			},
+			"LinkedPluginAttributes": {
+				"$array": true,
+				"$type": "SoundGraphLinkedPluginAttribute"
+			},
+			"Connections": {
+				"$array": true,
+				"$type": "SoundGraphPluginConnection"
+			},
+			"ConstructParams": {
+				"$array": true,
+				"$type": "SoundGraphPluginConstructParam"
+			},
+			"PluginsParamCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"PluginCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"SoundGraphLinkedPluginAttribute": {
+		"$type": "SoundGraphLinkedPluginAttribute",
+		"$properties": {
+			"Plugin": {
+				"$type": "SoundGraphPluginRef"
+			},
+			"AttributeIndex": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"Node": {
+				"$type": "AudioGraphNodeData"
+			},
+			"Port": {
+				"$type": "AudioGraphNodePort"
+			},
+			"AllowExtremeValues": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"SoundGraphPluginConnection": {
+		"$type": "SoundGraphPluginConnection",
+		"$properties": {
+			"ConnectionType": {
+				"DefaultValue": "SoundGraphPluginConnectionType_Unconnected",
+				"$type": "SoundGraphPluginConnectionType"
+			},
+			"VoiceIndex": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"Bus": {
+				"$type": "SoundBusData"
+			},
+			"Parameters": {
+				"$array": true,
+				"$type": "SoundGraphPluginConnectionParam"
+			}
+		}
+	},
+	"SoundGraphPluginConnectionParam": {
+		"$type": "SoundGraphPluginConnectionParam",
+		"$properties": {
+			"Index": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SoundGraphPluginConstructParam": {
+		"$type": "SoundGraphPluginConstructParam",
+		"$properties": {
+			"Index": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SoundGraphPluginInfo": {
+		"$type": "SoundGraphPluginInfo",
+		"$properties": {
+			"Id": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"EnableAttributeReadMask": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ConnectionIndex": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"OutputChannelCount": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"ConstructParamsIndex": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"ConstructParamCount": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			}
+		}
+	},
+	"SoundGraphPluginRef": {
+		"$type": "SoundGraphPluginRef",
+		"$properties": {
+			"IsValid": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"VoiceIndex": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"PluginIndex": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			}
+		}
+	},
+	"SoundGraphVoiceInfo": {
+		"$type": "SoundGraphVoiceInfo",
+		"$properties": {
+			"Plugins": {
+				"$array": true,
+				"$type": "SoundGraphPluginInfo"
+			},
+			"ProcessingStage": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			}
+		}
+	},
+	"SoundPatchPublicNode": {
+		"$type": "SoundPatchPublicNode",
+		"$properties": {
+			"Node": {
+				"$type": "AudioGraphNodeData"
+			},
+			"Id": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"SoundScopeStrategyMapping": {
+		"$type": "SoundScopeStrategyMapping",
+		"$properties": {
+			"Scope": {
+				"$type": "SoundScopeData"
+			},
+			"Strategy": {
+				"$type": "SoundScopeStrategyData"
+			}
+		}
+	},
+	"SoundWaveLocalizationInfo": {
+		"$type": "SoundWaveLocalizationInfo",
+		"$properties": {
+			"Language": {
+				"$type": "AudioLanguage"
+			},
+			"FirstVariationIndex": {
+				"DefaultValue": 0,
+				"$type": "Uint16"
+			},
+			"VariationCount": {
+				"DefaultValue": 0,
+				"$type": "Uint16"
+			}
+		}
+	},
+	"SoundWaveSubtitle": {
+		"$type": "SoundWaveSubtitle",
+		"$properties": {
+			"StringIndex": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			},
+			"Time": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SoundWaveVariationSegment": {
+		"$type": "SoundWaveVariationSegment",
+		"$properties": {
+			"SamplesOffset": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"SeekTableOffset": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"SegmentLength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SpawnScreenWeaponData": {
+		"$type": "SpawnScreenWeaponData",
+		"$properties": {
+			"WeaponName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Texture": {
+				"$type": "TextureAsset"
+			}
+		}
+	},
+	"SpecialMoveInterpolatedPoint": {
+		"$type": "SpecialMoveInterpolatedPoint",
+		"$properties": {
+			"Time": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Value": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"SpecialMoveStateData": {
+		"$type": "SpecialMoveStateData",
+		"$properties": {
+			"ScaleWithDistanceToObject": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"OptimumDistanceFromObject": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OptimumHeightOfObject": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OptimumLengthOfObject": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxDistanceScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinDistanceScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxHeightScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinHeightScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxObjectLengthScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinObjectLengthScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"KeepInitialSoldierDirection": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ExitAnimationDrivenStateVelocity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OverridePose": {
+				"DefaultValue": "SpecialMovesPoseType_Stand",
+				"$type": "SpecialMovesPoseType"
+			},
+			"ResetPose": {
+				"DefaultValue": "SpecialMovesPoseType_Stand",
+				"$type": "SpecialMovesPoseType"
+			},
+			"GravityPoints": {
+				"$array": true,
+				"$type": "SpecialMoveInterpolatedPoint"
+			},
+			"MotionPoints": {
+				"$array": true,
+				"$type": "SpecialMoveInterpolatedPoint"
+			}
+		}
+	},
+	"SpecialMoveVaultStateCriteria": {
+		"$type": "SpecialMoveVaultStateCriteria",
+		"$properties": {
+			"DistToObject": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DistToObjectTolerance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HeightOfObject": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HeightOfObjectTolerance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LengthOfObject": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LengthOfObjectTolerance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SpecialMoveState": {
+				"$type": "SpecialMoveStateData"
+			}
+		}
+	},
+	"SpecialMovesBinding": {
+		"$type": "SpecialMovesBinding",
+		"$properties": {
+			"TriggerHighVault": {
+				"$type": "AntRef"
+			},
+			"TriggerUpVault": {
+				"$type": "AntRef"
+			},
+			"TriggerLowVault": {
+				"$type": "AntRef"
+			},
+			"TriggerSlideIntoProne": {
+				"$type": "AntRef"
+			},
+			"TriggerSpecialAnimation": {
+				"$type": "AntRef"
+			},
+			"SpecialAnimationIndex": {
+				"$type": "AntRef"
+			},
+			"ObjectHeight": {
+				"$type": "AntRef"
+			},
+			"ObjectDistance": {
+				"$type": "AntRef"
+			},
+			"StartObjectDistanceTimer": {
+				"$type": "AntRef"
+			},
+			"VaultObjectPositionX": {
+				"$type": "AntRef"
+			},
+			"VaultObjectPositionZ": {
+				"$type": "AntRef"
+			},
+			"CancelAnimation": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"SpeedModifierData": {
+		"$type": "SpeedModifierData",
+		"$properties": {
+			"ForwardConstant": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BackwardConstant": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LeftConstant": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RightConstant": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SphereCollisionData": {
+		"$type": "SphereCollisionData",
+		"$properties": {
+			"ExtraRadius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CounterNormalBrakeForceMod": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Enabled": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"SpringData": {
+		"$type": "SpringData",
+		"$properties": {
+			"Length": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Stiffness": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Damping": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxSpringForce": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ProgressiveStartRatio": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ProgressiveExponent": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"VisualClipOffset": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AttachOffsetY": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DisabledStrenghModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"StabilizerSettings": {
+		"$type": "StabilizerSettings",
+		"$properties": {
+			"Property": {
+				"DefaultValue": "SPPitchAngle",
+				"$type": "StabilizerProperty"
+			},
+			"Strength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Advanced": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"StanceCameraData": {
+		"$type": "StanceCameraData",
+		"$properties": {
+			"ValidStances": {
+				"$array": true,
+				"$type": "Int32"
+			},
+			"DefaultCameraForStances": {
+				"$array": true,
+				"$type": "Int32"
+			}
+		}
+	},
+	"StanceSwitchSoundData": {
+		"$type": "StanceSwitchSoundData",
+		"$properties": {
+			"StanceSwitchSound": {
+				"$type": "SoundAsset"
+			},
+			"ValidStances": {
+				"$array": true,
+				"$type": "Int32"
+			}
+		}
+	},
+	"StatSpamSetting": {
+		"$type": "StatSpamSetting",
+		"$properties": {
+			"Event": {
+				"DefaultValue": "StatEvent_Kill",
+				"$type": "StatEvent"
+			},
+			"AmountLimit": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"TimeLimit": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PlayerToPlayer": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"StaticListItem": {
+		"$type": "StaticListItem",
+		"$properties": {
+			"ItemName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"AppendPlatformToSID": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"DynamicDisable": {
+				"$type": "UIDataSourceInfo"
+			},
+			"DynamicNewContent": {
+				"$type": "UIDataSourceInfo"
+			},
+			"ExcludeInRetail": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"StaticModelGroupMemberData": {
+		"$type": "StaticModelGroupMemberData",
+		"$properties": {
+			"InstanceTransforms": {
+				"$array": true,
+				"$type": "LinearTransform"
+			},
+			"InstanceScale": {
+				"$array": true,
+				"$type": "Float32"
+			},
+			"InstanceObjectVariation": {
+				"$array": true,
+				"$type": "Uint32"
+			},
+			"InstanceCastSunShadow": {
+				"$array": true,
+				"$type": "Boolean"
+			},
+			"MemberType": {
+				"$type": "GamePhysicsEntityData"
+			},
+			"MeshEntityType": {
+				"$type": "EntityData"
+			},
+			"InstanceCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"HealthStateEntityManagerId": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"PhysicsPartRange": {
+				"$type": "IndexRange"
+			},
+			"PhysicsPartCountPerInstance": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"NetworkIdRange": {
+				"$type": "IndexRange"
+			},
+			"NetworkIdCountPerInstance": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"StaticModelNetworkInfo": {
+		"$type": "StaticModelNetworkInfo",
+		"$properties": {
+			"PartNetworkIdRanges": {
+				"$array": true,
+				"$type": "IndexRange"
+			},
+			"NetworkIdCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"ChildNetworkInfos": {
+				"$array": true,
+				"$type": "ChildStaticModelNetworkInfo"
+			},
+			"ChildNetworkIdCount": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"StreamGridCell": {
+		"$type": "StreamGridCell",
+		"$properties": {
+			"ReferenceData": {
+				"$type": "ReferenceObjectData"
+			},
+			"X": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Z": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"Strengths": {
+		"$type": "Strengths",
+		"$properties": {
+			"Infantry": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LightArmour": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HeavyArmour": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Helicopter": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"StringOption": {
+		"$type": "StringOption",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"SubScreenData": {
+		"$type": "SubScreenData",
+		"$properties": {
+			"ProjectionAngleX": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ProjectionAngleY": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ProjectionAngleZ": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ScreenPosition": {
+				"$type": "Vec3"
+			},
+			"ScreenSize": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"IconSize": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ScaleIconSizeByDepthStrength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"UseRenderTarget": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"RenderTargetIndex": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"RenderTargetApectRatio": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SubSkeleton": {
+		"$type": "SubSkeleton",
+		"$properties": {
+			"Skeleton": {
+				"$type": "SkeletonAsset"
+			},
+			"BoneMap": {
+				"$array": true,
+				"$type": "Int32"
+			},
+			"TransformMap": {
+				"$array": true,
+				"$type": "LinearTransform"
+			}
+		}
+	},
+	"SubsystemTimingConfigData": {
+		"$type": "SubsystemTimingConfigData",
+		"$properties": {
+			"Sensing": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Evaluation": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"GoalUpdates": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"IntentUpdates": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BehaviourSelection": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BehaviourExecution": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SupplyData": {
+		"$type": "SupplyData",
+		"$properties": {
+			"SupplySoldiers": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SupplyVehicles": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"Healing": {
+				"$type": "SupplyUnitSphereData"
+			},
+			"Ammo": {
+				"$type": "SupplyUnitSphereData"
+			},
+			"TeamSpecific": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"ExcludeSelf": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"SupplyUnitSphereData": {
+		"$type": "SupplyUnitSphereData",
+		"$properties": {
+			"Radius": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SupplyIncSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"InfiniteCapacity": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SupplyPointsRefillSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SupplyPointsCapacity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SupportedShootingBinding": {
+		"$type": "SupportedShootingBinding",
+		"$properties": {
+			"Supported": {
+				"$type": "AntRef"
+			},
+			"SupportedPos": {
+				"$type": "AntRef"
+			},
+			"ForwardVector": {
+				"$type": "AntRef"
+			},
+			"Yaw": {
+				"$type": "AntRef"
+			},
+			"Pitch": {
+				"$type": "AntRef"
+			},
+			"DistToObject": {
+				"$type": "AntRef"
+			},
+			"HeightOfObject": {
+				"$type": "AntRef"
+			},
+			"Undeploying": {
+				"$type": "AntRef"
+			},
+			"AnimatedCamera": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"SupportedShootingProximityChecking": {
+		"$type": "SupportedShootingProximityChecking",
+		"$properties": {
+			"RayAboveGunHeightOffset": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RayAboveLength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RayBelowGunHeightOffset": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RayBelowLength": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"SuppressionReactionData": {
+		"$type": "SuppressionReactionData",
+		"$properties": {
+			"SuppressionHighThreshold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SuppressionLowThreshold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SuppressionUIThreshold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"Surface2dDrawMethodData": {
+		"$type": "Surface2dDrawMethodData",
+		"$properties": {}
+	},
+	"Surface2dDrawPassData": {
+		"$type": "Surface2dDrawPassData",
+		"$properties": {}
+	},
+	"Surface3dDrawMethodData": {
+		"$type": "Surface3dDrawMethodData",
+		"$properties": {}
+	},
+	"SurfaceShaderInstanceDataStruct": {
+		"$type": "SurfaceShaderInstanceDataStruct",
+		"$properties": {
+			"Shader": {
+				"$type": "SurfaceShaderBaseAsset"
+			},
+			"BoolParameters": {
+				"$array": true,
+				"$type": "BoolShaderParameter"
+			},
+			"VectorParameters": {
+				"$array": true,
+				"$type": "VectorShaderParameter"
+			},
+			"VectorArrayParameters": {
+				"$array": true,
+				"$type": "VectorArrayShaderParameter"
+			},
+			"TextureParameters": {
+				"$array": true,
+				"$type": "TextureShaderParameter"
+			}
+		}
+	},
+	"TerrainGeoTexture": {
+		"$type": "TerrainGeoTexture",
+		"$properties": {}
+	},
+	"TerrainLayerCombinationDrawData": {
+		"$type": "TerrainLayerCombinationDrawData",
+		"$properties": {}
+	},
+	"TerrainLayerCombinationDrawPassData": {
+		"$type": "TerrainLayerCombinationDrawPassData",
+		"$properties": {}
+	},
+	"TerrainLayerProceduralMask": {
+		"$type": "TerrainLayerProceduralMask",
+		"$properties": {
+			"AltitudeMin": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"TerrainQuadDecalAtlasTile": {
+		"$type": "TerrainQuadDecalAtlasTile",
+		"$properties": {
+			"TileIndexX": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"TileIndexY": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"TileCountX": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"TileCountY": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"FlipX": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"FlipY": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"TextureShaderParameter": {
+		"$type": "TextureShaderParameter",
+		"$properties": {
+			"ParameterName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"$type": "TextureBaseAsset"
+			}
+		}
+	},
+	"TicketCountPercentage": {
+		"$type": "TicketCountPercentage",
+		"$properties": {
+			"MaxPercentOfTicketsLeft": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"TicketLossPerMin": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"TurnEffectData": {
+		"$type": "TurnEffectData",
+		"$properties": {
+			"MaxRollAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxPitchAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"YawVelocityThreshhold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"VelocityThreshhold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"SafeTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BeginTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"HoldTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"EndTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"TurretRotationInfo": {
+		"$type": "TurretRotationInfo",
+		"$properties": {
+			"RotationAxis": {
+				"DefaultValue": "raX",
+				"$type": "RotationAxis"
+			},
+			"Channel": {
+				"DefaultValue": "RotationChannel_Pitch",
+				"$type": "RotationChannel"
+			},
+			"NormalizeRotation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"MaxRotation": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinRotation": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PhaseOffset": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"InvertRotation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"UIAudioEventMapping": {
+		"$type": "UIAudioEventMapping",
+		"$properties": {
+			"EventName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"SoundAsset": {
+				"$type": "SoundAsset"
+			}
+		}
+	},
+	"UIBundleAssetState": {
+		"$type": "UIBundleAssetState",
+		"$properties": {
+			"StateName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"UIState": {
+				"DefaultValue": "UIState_Menu",
+				"$type": "UIState"
+			},
+			"ResourceBundleName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"UIButton": {
+		"$type": "UIButton",
+		"$properties": {
+			"ButtonLabel": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ButtonId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"IsPremium": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"UIButtonSet": {
+		"$type": "UIButtonSet",
+		"$properties": {
+			"Buttons": {
+				"$array": true,
+				"$type": "UIButton"
+			}
+		}
+	},
+	"UICreditsLine": {
+		"$type": "UICreditsLine",
+		"$properties": {
+			"TextType": {
+				"DefaultValue": "SingleLine",
+				"$type": "UICreditsTextType"
+			},
+			"Text": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"UICreditsPage": {
+		"$type": "UICreditsPage",
+		"$properties": {
+			"Header1": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Header2": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Lines": {
+				"$array": true,
+				"$type": "UICreditsLine"
+			}
+		}
+	},
+	"UIDataSourceInfo": {
+		"$type": "UIDataSourceInfo",
+		"$properties": {
+			"DataName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DataCategory": {
+				"$type": "UIComponentData"
+			},
+			"DataKey": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"UseDirectAccess": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UpdateOnInitialize": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"UIFontMapping": {
+		"$type": "UIFontMapping",
+		"$properties": {
+			"ScaleformFontName": {
+				"$array": true,
+				"$type": "CString"
+			},
+			"FontLongName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"UIGPSPosition": {
+		"$type": "UIGPSPosition",
+		"$properties": {
+			"Latitude": {
+				"DefaultValue": 0,
+				"$type": "Float64"
+			},
+			"Longitude": {
+				"DefaultValue": 0,
+				"$type": "Float64"
+			},
+			"SeaLevelOffset": {
+				"DefaultValue": 0,
+				"$type": "Float64"
+			}
+		}
+	},
+	"UIGeoLatitude": {
+		"$type": "UIGeoLatitude",
+		"$properties": {
+			"Degrees": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Minuites": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Seconds": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"UIGeoLongitude": {
+		"$type": "UIGeoLongitude",
+		"$properties": {
+			"Degrees": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Minuites": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"Seconds": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"UILeaderboardData": {
+		"$type": "UILeaderboardData",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Description": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"UILevelLocation": {
+		"$type": "UILevelLocation",
+		"$properties": {}
+	},
+	"UILevelSpecificPageHeader": {
+		"$type": "UILevelSpecificPageHeader",
+		"$properties": {
+			"LevelNameSID": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Header": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"SubHeader": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"UILevelStatData": {
+		"$type": "UILevelStatData",
+		"$properties": {
+			"StatEasy": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"StatMedium": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"StatHard": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"StatHardcore": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"UIListItem": {
+		"$type": "UIListItem",
+		"$properties": {
+			"Label": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"IsEnabled": {
+				"$type": "UIDataSourceInfo"
+			},
+			"DefaultIsEnabled": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"IsVisible": {
+				"$type": "UIDataSourceInfo"
+			},
+			"DefaultIsVisible": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"DataUpdate": {
+				"$type": "UIDataSourceInfo"
+			},
+			"ToggleItems": {
+				"$type": "UIDataSourceInfo"
+			}
+		}
+	},
+	"UIMinimapConfig": {
+		"$type": "UIMinimapConfig",
+		"$properties": {
+			"CombatAreaCameraDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CameraInterpolationTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CombatAreaFadeSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ZoomStates": {
+				"$array": true,
+				"$type": "UIMinimapZoomConfig"
+			},
+			"CameraPanSensitivity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinVelocity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxVelocity": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"VelocityModifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DisableDefaultState": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"UIMinimapData": {
+		"$type": "UIMinimapData",
+		"$properties": {
+			"Detail": {
+				"$type": "UIMinimapDistanceFieldParams"
+			},
+			"Vegetation": {
+				"$type": "UIMinimapDistanceFieldParams"
+			},
+			"FadeTexture": {
+				"$type": "TextureAsset"
+			},
+			"AirRadarFadeTexture": {
+				"$type": "TextureAsset"
+			},
+			"DetailTexture": {
+				"$type": "TextureAsset"
+			},
+			"UseStreamingMinimap": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"StreamingMinimapDelay": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"StreamingMinimapTransitionSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DetailTextureTint": {
+				"$type": "Vec4"
+			},
+			"WorldCenter": {
+				"$type": "Vec2"
+			},
+			"WorldSize": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"WorldRotation": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"WorldRange": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"UseCombatAreaTexture": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"CombatAreaFadeSpeed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CombatAreaAlphaThreshold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CombatAreaDistanceScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CombatAreaColor": {
+				"$type": "Vec4"
+			},
+			"CombatAreaMultiplyTexture": {
+				"$type": "TextureAsset"
+			},
+			"CombatAreaMultiplyWrapAmount": {
+				"$type": "Vec2"
+			},
+			"CombatAreaScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AirRadarRange": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"UIMinimapDistanceFieldParams": {
+		"$type": "UIMinimapDistanceFieldParams",
+		"$properties": {
+			"DistanceField": {
+				"$type": "UIDistanceFieldAsset"
+			},
+			"AlphaThreshold": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DistanceScale": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ColorTint": {
+				"$type": "Vec4"
+			},
+			"OutlineInner": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OutlineOuter": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"OutlineColor": {
+				"$type": "Vec4"
+			}
+		}
+	},
+	"UIMinimapIconTexture": {
+		"$type": "UIMinimapIconTexture",
+		"$properties": {
+			"IconType": {
+				"DefaultValue": "UIHudIcon_Unused",
+				"$type": "UIHudIcon"
+			},
+			"States": {
+				"$array": true,
+				"$type": "UIMinimapIconTextureState"
+			}
+		}
+	},
+	"UIMinimapIconTextureState": {
+		"$type": "UIMinimapIconTextureState",
+		"$properties": {
+			"State": {
+				"DefaultValue": "UIIconState_Default",
+				"$type": "UIIconState"
+			},
+			"FrameRate": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ShouldRotate": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"TextureInfos": {
+				"$array": true,
+				"$type": "UIMinimapIconUv"
+			}
+		}
+	},
+	"UIMinimapIconUv": {
+		"$type": "UIMinimapIconUv",
+		"$properties": {
+			"MinUv": {
+				"$type": "Vec2"
+			},
+			"MaxUv": {
+				"$type": "Vec2"
+			}
+		}
+	},
+	"UIMinimapZoomConfig": {
+		"$type": "UIMinimapZoomConfig",
+		"$properties": {
+			"State": {
+				"DefaultValue": "UIMinimapZoomState_Default",
+				"$type": "UIMinimapZoomState"
+			},
+			"Data": {
+				"$type": "MinimapData"
+			}
+		}
+	},
+	"UINetworkTextInfo": {
+		"$type": "UINetworkTextInfo",
+		"$properties": {
+			"StringId": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DisplayTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"UIPartProperties": {
+		"$type": "UIPartProperties",
+		"$properties": {
+			"Identifier": {
+				"DefaultValue": "HCI_None",
+				"$type": "UIPartIdentifier"
+			},
+			"Range": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Frequency": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"CompensateFreelook": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"UIPopupButton": {
+		"$type": "UIPopupButton",
+		"$properties": {
+			"InputConcept": {
+				"DefaultValue": "UIInputAction_NavigateUp",
+				"$type": "UIInputAction"
+			},
+			"Label": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"UIPopupTextInput": {
+		"$type": "UIPopupTextInput",
+		"$properties": {
+			"Id": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Label": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"DefaultValue": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"IsPassword": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"UISettingsGroup": {
+		"$type": "UISettingsGroup",
+		"$properties": {
+			"NameSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ScreenColumn": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"SettingsItems": {
+				"$array": true,
+				"$type": "UISettingsItem"
+			}
+		}
+	},
+	"UISettingsItem": {
+		"$type": "UISettingsItem",
+		"$properties": {
+			"NameSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"StartEndSymbols": {
+				"DefaultValue": "UISettingSymbols_Pluses",
+				"$type": "UISettingSymbols"
+			},
+			"Setting": {
+				"$type": "ProfileOptionData"
+			}
+		}
+	},
+	"UISettingsPage": {
+		"$type": "UISettingsPage",
+		"$properties": {
+			"NameSid": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"SettingsGroups": {
+				"$array": true,
+				"$type": "UISettingsGroup"
+			}
+		}
+	},
+	"UITaggedVehicleCrosshair": {
+		"$type": "UITaggedVehicleCrosshair",
+		"$properties": {
+			"MinDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MinSize": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"MaxSize": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"UITextureAtlasInfo": {
+		"$type": "UITextureAtlasInfo",
+		"$properties": {
+			"MinUv": {
+				"$type": "Vec2"
+			},
+			"MaxUv": {
+				"$type": "Vec2"
+			}
+		}
+	},
+	"UIWidgetProperty": {
+		"$type": "UIWidgetProperty",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Value": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"UIntRange": {
+		"$type": "UIntRange",
+		"$properties": {
+			"Min": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"Max": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"UavCameraPointData": {
+		"$type": "UavCameraPointData",
+		"$properties": {
+			"MinTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Speed": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AccelerationTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"UnlockAssetPair": {
+		"$type": "UnlockAssetPair",
+		"$properties": {
+			"Second": {
+				"$type": "UnlockAssetBase"
+			},
+			"Result": {
+				"$type": "UnlockAssetBase"
+			}
+		}
+	},
+	"UnlockWeaponAndSlot": {
+		"$type": "UnlockWeaponAndSlot",
+		"$properties": {
+			"Weapon": {
+				"$type": "SoldierWeaponUnlockAsset"
+			},
+			"Slot": {
+				"DefaultValue": "WeaponSlot_0",
+				"$type": "WeaponSlot"
+			},
+			"UnlockAssets": {
+				"$array": true,
+				"$type": "UnlockAssetBase"
+			}
+		}
+	},
+	"UnlockableProjectile": {
+		"$type": "UnlockableProjectile",
+		"$properties": {
+			"ProjectileData": {
+				"$type": "ProjectileEntityData"
+			},
+			"Projectile": {
+				"$type": "ProjectileBlueprint"
+			},
+			"InitialSpeed": {
+				"$type": "Vec3"
+			},
+			"Unlock": {
+				"$type": "UnlockAssetBase"
+			}
+		}
+	},
+	"UrgencyModifierData": {
+		"$type": "UrgencyModifierData",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Modifier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"ValueAtX": {
+		"$type": "ValueAtX",
+		"$properties": {
+			"X": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"Vec2": {
+		"$type": "Vec2",
+		"$properties": {
+			"x": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"y": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"Vec3": {
+		"$type": "Vec3",
+		"$properties": {
+			"x": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"y": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"z": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"Vec4": {
+		"$type": "Vec4",
+		"$properties": {
+			"x": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"y": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"z": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"w": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"VectorArrayShaderParameter": {
+		"$type": "VectorArrayShaderParameter",
+		"$properties": {
+			"ParameterName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ParameterType": {
+				"DefaultValue": "ShaderParameterType_Bool",
+				"$type": "ShaderParameterType"
+			},
+			"Values": {
+				"$array": true,
+				"$type": "Vec4"
+			}
+		}
+	},
+	"VectorShaderParameter": {
+		"$type": "VectorShaderParameter",
+		"$properties": {
+			"ParameterName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"ParameterType": {
+				"DefaultValue": "ShaderParameterType_Bool",
+				"$type": "ShaderParameterType"
+			},
+			"Value": {
+				"$type": "Vec4"
+			}
+		}
+	},
+	"VehicleCameraControlBinding": {
+		"$type": "VehicleCameraControlBinding",
+		"$properties": {
+			"EnableAnimatedVehicleCamera": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"VehicleEntryListenerBinding": {
+		"$type": "VehicleEntryListenerBinding",
+		"$properties": {
+			"InVehicle": {
+				"$type": "AntRef"
+			},
+			"InOpenEntry": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryFire": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryYaw": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryPitch": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryRoll": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryRotation": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryForceX": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryForceY": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryForceZ": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryIndex": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryIndexUpdated": {
+				"$type": "AntRef"
+			},
+			"VehicleOpenEntryIndex": {
+				"$type": "AntRef"
+			},
+			"InVehicleRetrigger": {
+				"$type": "AntRef"
+			},
+			"VehicleEntryChooserIndex": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"VehicleHealthZoneData": {
+		"$type": "VehicleHealthZoneData",
+		"$properties": {
+			"MaxHealth": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"MaxShieldHealth": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"UseDamageAngleCalculation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"MinDamageAngle": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"DamageAngleMultiplier": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"VehicleHudData": {
+		"$type": "VehicleHudData",
+		"$properties": {
+			"Customization": {
+				"$type": "VehicleCustomizationAsset"
+			},
+			"CustomizationOffset": {
+				"$type": "Vec3"
+			},
+			"MinimapIcon": {
+				"DefaultValue": "UIHudIcon_Unused",
+				"$type": "UIHudIcon"
+			},
+			"Texture": {
+				"$type": "TextureAsset"
+			},
+			"VehicleItemHash": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"VehicleInputData": {
+		"$type": "VehicleInputData",
+		"$properties": {
+			"ThrottleDeadzone": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BrakeDeadzone": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"YawDeadzone": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PitchDeadzone": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RollDeadzone": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ThrottleInertiaOutDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ThrottleInertiaInDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ThrottleInertiaMinRatio": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BrakeInertiaOutDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BrakeInertiaInDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"BrakeInertiaMinRatio": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"YawInertiaOutDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"YawInertiaInDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"YawInertiaMinRatio": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PitchInertiaOutDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PitchInertiaInDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PitchInertiaMinRatio": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RollInertiaOutDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RollInertiaInDuration": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RollInertiaMinRatio": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"VehicleLockableInfoData": {
+		"$type": "VehicleLockableInfoData",
+		"$properties": {
+			"HeatSignature": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RadarSignature": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LowAltitudeHeight": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LowAltitudeHeatSignature": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"VehicleParachuteBinding": {
+		"$type": "VehicleParachuteBinding",
+		"$properties": {
+			"Enabled": {
+				"$type": "AntRef"
+			},
+			"VehicleType": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"VehicleTrackerRenderTargetData": {
+		"$type": "VehicleTrackerRenderTargetData",
+		"$properties": {
+			"UseRenderTarget": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"RenderTargetIndex": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"RenderTargetApectRatio": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ScaleSize": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"PositionOffset": {
+				"$type": "Vec2"
+			}
+		}
+	},
+	"VisionBoxSettings": {
+		"$type": "VisionBoxSettings",
+		"$properties": {
+			"DecreaseXz": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LowerTop": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RaiseBottom": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"RaiseBottomHuman": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"VoiceOverDialogTake": {
+		"$type": "VoiceOverDialogTake",
+		"$properties": {
+			"Wave": {
+				"$type": "SoundWaveAsset"
+			}
+		}
+	},
+	"VoiceOverDialogTakeMapping": {
+		"$type": "VoiceOverDialogTakeMapping",
+		"$properties": {
+			"TakeControlMin": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TakeControlMax": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"TakeIndex": {
+				"DefaultValue": 0,
+				"$type": "Int8"
+			}
+		}
+	},
+	"VoiceOverManuscriptLanguageColumns": {
+		"$type": "VoiceOverManuscriptLanguageColumns",
+		"$properties": {
+			"Language": {
+				"$type": "AudioLanguage"
+			},
+			"TextColumn": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"SubtitleOffsetColumn": {
+				"DefaultValue": "",
+				"$type": "CString"
+			}
+		}
+	},
+	"WarpAnimationBinding": {
+		"$type": "WarpAnimationBinding",
+		"$properties": {
+			"ConnectJointGroup": {
+				"$type": "AntRef"
+			},
+			"ConnectJointWeight": {
+				"$type": "AntRef"
+			},
+			"EnableAlign": {
+				"$type": "AntRef"
+			},
+			"DisableCulling": {
+				"$type": "AntRef"
+			},
+			"TranslationYWarpTolerance": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"WeaponLagBinding": {
+		"$type": "WeaponLagBinding",
+		"$properties": {
+			"EntityPitch": {
+				"$type": "AntRef"
+			},
+			"EntityYaw": {
+				"$type": "AntRef"
+			},
+			"PitchResult": {
+				"$type": "AntRef"
+			},
+			"YawResult": {
+				"$type": "AntRef"
+			},
+			"RollResult": {
+				"$type": "AntRef"
+			}
+		}
+	},
+	"WeaponLagEffectForceData": {
+		"$type": "WeaponLagEffectForceData",
+		"$properties": {
+			"OffsetForce": {
+				"$type": "Vec3"
+			},
+			"RotationForce": {
+				"$type": "Vec3"
+			}
+		}
+	},
+	"WeaponLagEffectSpringData": {
+		"$type": "WeaponLagEffectSpringData",
+		"$properties": {
+			"Constant": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"Damping": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"WeaponLagEffectSpringVector": {
+		"$type": "WeaponLagEffectSpringVector",
+		"$properties": {
+			"SpringX": {
+				"$type": "WeaponLagEffectSpringData"
+			},
+			"SpringY": {
+				"$type": "WeaponLagEffectSpringData"
+			},
+			"SpringZ": {
+				"$type": "WeaponLagEffectSpringData"
+			}
+		}
+	},
+	"WeaponMiscModifierSettings": {
+		"$type": "WeaponMiscModifierSettings",
+		"$properties": {
+			"EnableBreathControl": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"CanBeInSupportedShooting": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"UnZoomOnBoltAction": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HoldBoltActionUntilZoomRelease": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"IsSilenced": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"WeaponModifier": {
+		"$type": "WeaponModifier",
+		"$properties": {
+			"DummyToMakeFrostEDcompile": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			}
+		}
+	},
+	"WeaponModifierData": {
+		"$type": "WeaponModifierData",
+		"$properties": {
+			"UnlockAsset": {
+				"$type": "UnlockAssetBase"
+			},
+			"Modifiers": {
+				"$array": true,
+				"$type": "WeaponModifierBase"
+			}
+		}
+	},
+	"WeaponOverrideValue": {
+		"$type": "WeaponOverrideValue",
+		"$properties": {
+			"ValueType": {
+				"DefaultValue": "OverrideValue_BulletEntity_DistributeDamageOverTime",
+				"$type": "WeaponOverrideValueType"
+			},
+			"Value": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	},
+	"WeaponPickupData": {
+		"$type": "WeaponPickupData",
+		"$properties": {
+			"Weapon": {
+				"$type": "SoldierWeaponBlueprint"
+			},
+			"WeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"AltWeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"LinkedToWeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"MinAmmo": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"MaxAmmo": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			}
+		}
+	},
+	"WeaponStateData": {
+		"$type": "WeaponStateData",
+		"$properties": {
+			"ReferencedAssetHashes": {
+				"$array": true,
+				"$type": "Uint32"
+			},
+			"BoneFakePhysics": {
+				"$array": true,
+				"$type": "BoneFakePhysicsData"
+			},
+			"Mesh1p": {
+				"$type": "SkinnedMeshAsset"
+			},
+			"MeshZoom1p": {
+				"$type": "SkinnedMeshAsset"
+			},
+			"Mesh3p": {
+				"$type": "SkinnedMeshAsset"
+			},
+			"Weapon": {
+				"$type": "AntRef"
+			},
+			"ZoomMeshTransitionFactor": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ZoomScaleFactor": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ZoomInOutMeshTransitionFactors": {
+				"$array": true,
+				"$type": "Float32"
+			},
+			"ZoomedScopeFilter": {
+				"$type": "ScopeFilterData"
+			},
+			"NonZoomedScopeFilter": {
+				"$type": "ScopeFilterData"
+			},
+			"KeepAimingTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"AlwaysAimHead": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"AnimatedFireType": {
+				"DefaultValue": "AnimatedFireAutomatic",
+				"$type": "AnimatedFireEnum"
+			},
+			"AnimatedAimingType": {
+				"DefaultValue": "AnimatedAimingTwoHanded",
+				"$type": "AnimatedAimingEnum"
+			},
+			"IsOneHanded": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"PlayDeployAfterFire": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SkipDeployAnimation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SkipReloadAnimation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"SkipFireAnimation": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			},
+			"HideProjectileAfterFireTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"ProjectileBoneName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Mesh3pTransforms": {
+				"$array": true,
+				"$type": "LinearTransform"
+			},
+			"Mesh3pRigidMeshSocketObjectTransforms": {
+				"$array": true,
+				"$type": "RigidMeshSocketTransform"
+			},
+			"AnimationConfiguration": {
+				"$type": "AnimationConfigurationData"
+			}
+		}
+	},
+	"WeaponSwitchingMapData": {
+		"$type": "WeaponSwitchingMapData",
+		"$properties": {
+			"FromWeapon": {
+				"DefaultValue": "wsSlot0",
+				"$type": "WeaponSwitchingEnum"
+			},
+			"Action": {
+				"DefaultValue": "EIAThrottle",
+				"$type": "EntryInputActionEnum"
+			},
+			"ToWeapon": {
+				"$array": true,
+				"$type": "WeaponSwitchingEnum"
+			},
+			"FireAndSwitchBackToPrev": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"WeaponUnlockPickupData": {
+		"$type": "WeaponUnlockPickupData",
+		"$properties": {
+			"UnlockWeaponAndSlot": {
+				"$type": "UnlockWeaponAndSlot"
+			},
+			"AltWeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"LinkedToWeaponSlot": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"MinAmmo": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"MaxAmmo": {
+				"DefaultValue": 0,
+				"$type": "Uint32"
+			},
+			"DefaultToFullAmmo": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"WidgetEventQueryPair": {
+		"$type": "WidgetEventQueryPair",
+		"$properties": {
+			"Name": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"Query": {
+				"DefaultValue": "UIWidgetEventID_None",
+				"$type": "UIWidgetEventID"
+			},
+			"InstanceName": {
+				"DefaultValue": "",
+				"$type": "CString"
+			},
+			"IsOutput": {
+				"DefaultValue": false,
+				"$type": "Boolean"
+			}
+		}
+	},
+	"ZoomLevelLockData": {
+		"$type": "ZoomLevelLockData",
+		"$properties": {
+			"OutlineTaggedDistance": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"LockType": {
+				"DefaultValue": "LockAlways",
+				"$type": "LockType"
+			}
+		}
+	},
+	"ZoomLevelSpecificTransitionTime": {
+		"$type": "ZoomLevelSpecificTransitionTime",
+		"$properties": {
+			"FromZoomLevel": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"ToZoomLevel": {
+				"DefaultValue": 0,
+				"$type": "Int32"
+			},
+			"ZoomTransitionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			},
+			"FovTransitionTime": {
+				"DefaultValue": 0,
+				"$type": "Float32"
+			}
+		}
+	}
+}
